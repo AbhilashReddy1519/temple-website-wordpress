@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
+	"customTemplates": [{"name":"page-no-sidebar","title":"Page No Sidebar","postTypes":["post","page"]},{"name":"blank-canvas","title":"Blank Canvas","postTypes":["post","page"]},{"name":"page-with-sidebar","title":"Page With Sidebar","postTypes":["post","page"]}],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"gradients": [],
+			"palette": [{"slug":"gv-color-primary","name":"Primary","color":"#7722ff"},{"slug":"gv-color-secondary","name":"Secondary","color":"#5d16da"},{"slug":"gv-color-text-primary","name":"Text Primary","color":"#011222"},{"slug":"gv-color-text-secondary","name":"Text Secondary","color":"#01122299"},{"slug":"gv-color-text-placeholder","name":"Text Placeholder","color":"#01122266"},{"slug":"gv-color-accent","name":"Accent","color":"#7722ff"},{"slug":"gv-color-accent-hover","name":"Accent Hover","color":"#5d16da"},{"slug":"gv-color-background-primary","name":"Background Primary","color":"#011222"},{"slug":"gv-color-background-secondary","name":"Background Secondary","color":"#f7f4ff"},{"slug":"gv-color-background-tertiary","name":"Background Tertiary","color":"#f1e9ff"},{"slug":"gv-color-border","name":"Border","color":"#e4eaf4"},{"slug":"gv-color-border-input","name":"Border Input","color":"#f7f9fc"},{"slug":"gv-color-white","name":"White","color":"#ffffff"},{"slug":"gv-color-dark-primary","name":"Dark Primary","color":"#7722ff"},{"slug":"gv-color-dark-secondary","name":"Dark Secondary","color":"#5d16da"},{"slug":"gv-color-dark-text-primary","name":"Dark Text Primary","color":"#ffffff"},{"slug":"gv-color-dark-text-secondary","name":"Dark Text Secondary","color":"#ffffff99"},{"slug":"gv-color-dark-text-placeholder","name":"Dark Text Placeholder","color":"#ffffff66"},{"slug":"gv-color-dark-accent","name":"Dark Accent","color":"#7722ff"},{"slug":"gv-color-dark-accent-hover","name":"Dark Accent Hover","color":"#5d16da"},{"slug":"gv-color-dark-background-primary","name":"Dark Background Primary","color":"#011222"},{"slug":"gv-color-dark-background-secondary","name":"Dark Background Secondary","color":"#0b1b2b"},{"slug":"gv-color-dark-background-tertiary","name":"Dark Background Tertiary","color":"#1a2a38"},{"slug":"gv-color-dark-border","name":"Dark Border","color":"#ffffff26"},{"slug":"gv-color-dark-border-input","name":"Dark Border Input","color":"#1f2d3c"},{"slug":"gv-color-black","name":"Black","color":"#000000"}]
+		},
+		"custom": {
+			"headings": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--primary)"
+				}
+			}
+		},
+		"layout": {"contentSize":"100%","wideSize":"100%"},
+		"spacing": {
+			"padding": true,
+			"margin": true,
+			"blockGap": true,
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"fontFamilies": [{"name":"Host Grotesk","slug":"host-grotesk","fontFamily":"Host Grotesk","fontFace":[{"fontFamily":"Host Grotesk","fontStyle":"normal","fontWeight":"300","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-Light.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"normal","fontWeight":"400","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-Regular.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"normal","fontWeight":"500","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-Medium.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"normal","fontWeight":"600","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-SemiBold.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"normal","fontWeight":"700","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-Bold.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"normal","fontWeight":"800","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-ExtraBold.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"italic","fontWeight":"300","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-LightItalic.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"italic","fontWeight":"400","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-Italic.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"italic","fontWeight":"500","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-MediumItalic.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"italic","fontWeight":"600","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-SemiBoldItalic.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"italic","fontWeight":"700","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-BoldItalic.ttf"},{"fontFamily":"Host Grotesk","fontStyle":"italic","fontWeight":"800","src":"file:.\/assets\/fonts\/host-grotesk\/HostGrotesk-ExtraBoldItalic.ttf"}]}],
+			"fontSizes": [{"fluid":{"min":"0.875rem","max":"1rem"},"size":"1rem","slug":"small","name":"Small"},{"fluid":{"min":"1rem","max":"1.125rem"},"size":"1.125rem","slug":"medium","name":"Medium"},{"fluid":{"min":"1.75rem","max":"1.875rem"},"size":"1.75rem","slug":"large","name":"Large"},{"fluid":false,"size":"2.25rem","slug":"extra-large","name":"Extra Large"},{"size":"clamp(160px, 13.889vw, 200px)","slug":"massive","name":"Massive"},{"size":"clamp(48px, 5vw, 72px)","slug":"gigantic","name":"Gigantic"},{"size":"clamp(40px, 3.611vw, 52px)","slug":"mega","name":"Mega"},{"size":"clamp(32px, 3.333vw, 48px)","slug":"jumbo","name":"Jumbo"},{"size":"clamp(26px, 2.222vw, 32px)","slug":"largest","name":"Largest"},{"size":"clamp(22px, 1.805vw, 26px)","slug":"big","name":"Big"},{"size":"clamp(20px, 1.666vw, 24px)","slug":"standard","name":"Standard"},{"size":"clamp(16px, 1.25vw, 18px)","slug":"normal","name":"Normal"},{"size":"clamp(14px, 1.111vw, 16px)","slug":"tiny","name":"Tiny"},{"size":"clamp(12, 1.228vw, 14px)","slug":"little","name":"Little"},{"size":"clamp(12px, 1.05vw, 12px)","slug":"mini","name":"Mini"},{"size":"clamp(48px, 4.166vw, 60px)","slug":"huge","name":"Huge"}]
+		}
+	},
+	"styles": {"spacing":{"blockGap":"1.2rem"},"blocks":{"core\/post-content":{"spacing":{"margin":{"top":"0px"}}}},"elements":{"link":{"color":{"text":"var:preset|color|gv-color-primary"},":hover":{"color":{"text":"var:preset|color|gv-color-secondary"}}}}},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 2
+}

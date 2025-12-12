@@ -1,0 +1,259 @@
+{
+	"apiVersion": 3,
+	"name": "gutenverse/post-terms",
+	"class_callback": "\\Gutenverse\\Block\\Post_Terms",
+	"title": "Post Terms",
+	"description": "Show the categories/tags of a single post.",
+	"category": "gutenverse-post",
+	"allowCopyStyle": true,
+	"attributes": {
+		"elementId": {
+			"type": "string"
+		},
+		"postId": {
+			"type": "string",
+			"default": 0
+		},
+		"backendPostId": {
+			"type": "string"
+		},
+		"noContentText": {
+			"type": "string",
+			"default": "No Content"
+		},
+		"contentType": {
+			"type": "string",
+			"default": "string",
+			"copyStyle": true
+		},
+		"inlineDisplay": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"contentGap": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termAlignment": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termBackground": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termBackgroundHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termBorderHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termBoxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"termBoxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"taxonomy": {
+			"type": "string",
+			"default": "category"
+		},
+		"separator": {
+			"type": "string",
+			"default": ","
+		},
+		"htmlTag": {
+			"type": "string",
+			"default": "span"
+		},
+		"linkTo": {
+			"type": "string",
+			"default": "none"
+		},
+		"customURL": {
+			"type": "string"
+		},
+		"alignment": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"typography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"color": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"textShadow": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"colorHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorItemHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"textShadowHover": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"background": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"backgroundHover": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"backgroundTransition": {
+			"type": "object",
+			"copyStyle": true,
+			"default": {}
+		},
+		"border": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "border",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"boxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "borderHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"boxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"margin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"padding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"zIndex": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"animation": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"hideDesktop": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"hideTablet": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"hideMobile": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"positioningType": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningWidth": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningAlign": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningLocation": {
+			"type": "string",
+			"copyStyle": true
+		},
+		"positioningLeft": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningRight": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningTop": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningBottom": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"transform": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mask": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"condition": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"usesContext": [
+		"postId",
+		"postType",
+		"queryId"
+	],
+	"supports": {
+		"className": false,
+		"anchor": true
+	},
+	"keywords": [
+		"single",
+		"post",
+		"term",
+		"category",
+		"tag",
+		"taxonomy"
+	],
+	"style": [
+		"gutenverse-frontend-post-terms-style"
+	]
+}

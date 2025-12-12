@@ -1,0 +1,119 @@
+{
+	"apiVersion": 3,
+	"name": "gutenverse/icon-list-item",
+	"title": "Icon List Item",
+	"description": "Show an icon list.",
+	"parent": ["gutenverse/icon-list"],
+	"category": "gutenverse-element",
+	"allowCopyStyle": true,
+	"attributes": {
+		"elementId": {
+			"type": "string"
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "href"
+		},
+		"dynamicUrl": {
+			"type": "object",
+			"default": {}
+		},
+		"isDynamic": {
+			"type": "boolean",
+			"default": false
+		},
+		"dynamicTextContent": {
+			"type": "array",
+			"copyStyle": true
+		},
+		"dynamicUrlContent": {
+			"type": "array",
+			"copyStyle": true
+		},
+		"hasGlobalLink": {
+			"type": "boolean",
+			"default": false
+		},
+		"dynamicDataList": {
+			"type": "array",
+			"default": []
+		},
+		"openDynamic": {
+			"type": "string"
+		},
+		"linkTarget": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "target"
+		},
+		"rel": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "rel"
+		},
+		"ariaLabel": {
+			"type": "string",
+			"copyStyle": true
+		},
+		"icon": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "i",
+			"attribute": "class",
+			"default": ""
+		},
+		"hideIcon": {
+			"type": "boolean",
+			"default": false,
+			"copyStyle": true
+		},
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": "span",
+			"default": "List item"
+		},
+		"textChilds": {
+			"type": "array",
+			"default": []
+		},
+		"margin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"padding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"zIndex": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"transform": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mask": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"iconLineHeight": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"condition": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"supports": {
+		"className": false,
+		"anchor": true
+	},
+	"keywords": ["icon", "list", "image", "symbol", "logo", "texts"],
+	"style": ["gutenverse-frontend-icon-list-item-style"]
+}

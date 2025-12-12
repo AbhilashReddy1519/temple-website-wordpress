@@ -1,0 +1,400 @@
+<?php
+/**
+ * Frontend Toolbar
+ *
+ * @author Jegstudio
+ * @since 1.4.0
+ * @package gutenverse-framework
+ */
+
+namespace Gutenverse\Framework;
+
+/**
+ * Class Frontend Toolbar
+ *
+ * @package gutenverse-framework
+ */
+class Frontend_Toolbar {
+	/**
+	 * Template Path.
+	 *
+	 * @var string
+	 */
+	private $is_block_template;
+
+	/**
+	 * Hierarcy.
+	 *
+	 * @var array
+	 */
+	private $hierarchy;
+
+	/**
+	 * Frontend Toolbar Construct.
+	 */
+	public function __construct() {
+		add_action( 'admin_bar_menu', array( $this, 'add_toolbar' ), 100 );
+		add_filter( 'template_include', array( $this, 'get_loaded_template' ), 1000 );
+
+		$hierarchies = array(
+			'404',
+			'archive',
+			'attachment',
+			'author',
+			'category',
+			'date',
+			'embed',
+			'frontpage',
+			'home',
+			'index',
+			'page',
+			'paged',
+			'privacypolicy',
+			'search',
+			'single',
+			'singular',
+			'tag',
+			'taxonomy',
+		);
+
+		foreach ( $hierarchies as $hierarchy ) {
+			add_filter( $hierarchy . '_template', array( $this, 'register_hierarchy' ), null, 3 );
+		}
+	}
+
+	/**
+	 * Get Template Part.
+	 *
+	 * @return array
+	 */
+	public function get_template_parts() {
+		return apply_filters( 'gutenverse_inject_template_part', array() );
+	}
+
+	/**
+	 * Register Hierarchy
+	 *
+	 * @param string   $template  Path to the template . See locate_template() .
+	 * @param string   $type      Sanitized filename without extension .
+	 * @param string[] $templates A list of template candidates, in descending order of priority .
+	 */
+	public function register_hierarchy( $template, $type, $templates ) {
+		$this->hierarchy = array(
+			'type'      => $type,
+			'templates' => $templates,
+		);
+
+		return $template;
+	}
+
+	/**
+	 * Block Template Canvas Path.
+	 */
+	public function get_block_template_default_path() {
+		return ABSPATH . WPINC . '/template-canvas.php';
+	}
+
+	/**
+	 * Get Loaded Template.
+	 *
+	 * @param string $template template path.
+	 *
+	 * @return string
+	 */
+	public function get_loaded_template( $template ) {
+		if ( $template === $this->get_block_template_default_path() ) {
+			$this->is_block_template = true;
+		}
+
+		return $template;
+	}
+
+	/**
+	 * Toolbar Items.
+	 *
+	 * @param \WP_Admin_Bar $admin_bar Admin Bar Instance.
+	 */
+	public function add_toolbar( $admin_bar ) {
+		if ( is_user_logged_in() ) {
+			if ( current_user_can( 'update_plugins' ) ) {
+
+				$title = '<span><img src="' . esc_url( GUTENVERSE_FRAMEWORK_URL_PATH . '/assets/icon/icon-logo-dashboard.svg' ) . '"/>' . esc_html__( 'Gutenverse', 'gutenverse-form' ) . '</span>';
+
+				$admin_bar->add_menu(
+					array(
+						'id'    => 'gutenverse',
+						'title' => $title,
+					)
+				);
+
+				if ( ! is_admin() ) {
+					if ( current_theme_supports( 'block-templates' ) && $this->is_block_template ) {
+						$block_template = resolve_block_template(
+							$this->hierarchy['type'],
+							$this->hierarchy['templates'],
+							''
+						);
+
+						$this->the_toolbar( $admin_bar, $block_template );
+					} else {
+						$this->not_toolbar( $admin_bar );
+					}
+
+					$admin_bar->add_menu(
+						array(
+							'id'     => 'first-space',
+							'parent' => 'gutenverse',
+							'title'  => '',
+						)
+					);
+				}
+
+				$admin_bar->add_menu(
+					array(
+						'id'     => 'backend',
+						'parent' => 'gutenverse',
+						'title'  => esc_html__( 'Gutenverse Admin', 'gutenverse-form' ),
+						'href'   => admin_url( 'admin.php?page=' . Dashboard::TYPE ),
+					)
+				);
+
+				if ( is_admin() ) {
+					$admin_bar->add_node(
+						array(
+							'id'     => 'gutenverse-adminbar-notification',
+							'title'  => '<span class="gutenverse-adminbar-notifications">' . '<div class="notifications-icon"><img src="' . esc_url( GUTENVERSE_FRAMEWORK_URL_PATH . '/assets/icon/icon-notifications.svg' ) . '"/></div>' . esc_html__( 'Gutenverse Pulse', 'gutenverse-form' ) . '</span>',
+							'parent' => 'top-secondary',
+						)
+					);
+
+					$admin_bar->add_node(
+						array(
+							'id'     => 'gutenverse-notification-list',
+							'title'  => '<div id="gutenverse-notification-list"></div>',
+							'parent' => 'gutenverse-adminbar-notification',
+						)
+					);
+				}
+			}
+		}
+
+		$this->setting_toolbar( $admin_bar, 'backend' );
+		$this->pro_toolbar( $admin_bar );
+	}
+
+	/**
+	 * Pro Toolbar
+	 *
+	 * @param \WP_Admin_Bar $admin_bar Admin Bar Instance.
+	 */
+	public function pro_toolbar( $admin_bar ) {
+		$site_url     = get_site_url();
+		$active_theme = get_option( 'stylesheet' );
+		if ( ! defined( 'GUTENVERSE_PRO' ) ) {
+			$admin_bar->add_menu(
+				array(
+					'id'     => 'gutenverse-pro',
+					'parent' => 'gutenverse',
+					'title'  => '<span class="gutenverse-pro-right">' . esc_html__( 'Upgrade to PRO', 'gutenverse-form' ) . '<img src="' . esc_url( GUTENVERSE_FRAMEWORK_URL_PATH . '/assets/icon/icon-crown.svg' ) . '"/> </span>',
+					'href'   => gutenverse_upgrade_pro() . '/?utm_source=gutenverse&utm_medium=admintopbar&utm_client_site=' . $site_url . '&utm_client_theme=' . $active_theme,
+					'meta'   => array(
+						'target' => '_blank',
+					),
+				)
+			);
+		}
+	}
+
+	/**
+	 * Setting Toolbar.
+	 *
+	 * @param \WP_Admin_Bar $admin_bar Admin Bar Instance.
+	 * @param string        $root Parent.
+	 */
+	public function setting_toolbar( $admin_bar, $root = 'gutenverse' ) {
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'dashboard',
+				'parent' => $root,
+				'title'  => esc_html__( 'Dashboard', 'gutenverse-form' ),
+				'href'   => admin_url( 'admin.php?page=' . Dashboard::TYPE ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'block-list',
+				'parent' => $root,
+				'title'  => esc_html__( 'Block List', 'gutenverse-form' ),
+				'href'   => admin_url( 'admin.php?page=gutenverse&path=block-list' ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'settings',
+				'parent' => $root,
+				'title'  => esc_html__( 'Settings', 'gutenverse-form' ),
+				'href'   => admin_url( 'admin.php?page=gutenverse&path=settings' ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'system',
+				'parent' => $root,
+				'title'  => esc_html__( 'System Status', 'gutenverse-form' ),
+				'href'   => admin_url( 'admin.php?page=gutenverse&path=system' ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'update-notice',
+				'parent' => $root,
+				'title'  => esc_html__( 'Update Notice', 'gutenverse-form' ),
+				'href'   => admin_url( 'admin.php?page=gutenverse&path=update-notice' ),
+			)
+		);
+
+		$is_wp_above_6_2 = version_compare( $GLOBALS['wp_version'], '6.2', '>=' );
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'gutenverse-site-editor',
+				'parent' => 'gutenverse',
+				'title'  => esc_html__( 'Template Editor', 'gutenverse-form' ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'second-space',
+				'parent' => 'gutenverse',
+				'title'  => '',
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'rate',
+				'parent' => 'gutenverse',
+				'title'  => esc_html__( 'Rate Us ', 'gutenverse-form' ) . '<span>★★★★★</span>',
+				'href'   => 'https://wordpress.org/support/plugin/gutenverse/reviews/#new-post',
+				'meta'   => array(
+					'target' => '_blank',
+				),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'gutenverse-template',
+				'parent' => 'gutenverse-site-editor',
+				'title'  => esc_html__( 'All Template', 'gutenverse-form' ),
+				'href'   => $is_wp_above_6_2 ? admin_url( 'site-editor.php?path=%2Fwp_template%2Fall' ) : admin_url( 'site-editor.php?postType=wp_template' ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'gutenverse-template-part',
+				'parent' => 'gutenverse-site-editor',
+				'title'  => esc_html__( 'Template Part', 'gutenverse-form' ),
+				'href'   => $is_wp_above_6_2 ? admin_url( 'site-editor.php?path=%2Fwp_template_part%2Fall' ) : admin_url( 'site-editor.php?postType=wp_template_part' ),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'support',
+				'parent' => 'gutenverse',
+				'title'  => esc_html__( 'Got Question?', 'gutenverse-form' ),
+				'href'   => 'https://wordpress.org/support/plugin/gutenverse/',
+				'meta'   => array(
+					'target' => '_blank',
+				),
+			)
+		);
+
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'help-documentation',
+				'parent' => 'gutenverse',
+				'title'  => esc_html__( 'Documentation', 'gutenverse-form' ),
+				'href'   => 'https://gutenverse.com/docs/',
+				'meta'   => array(
+					'target' => '_blank',
+				),
+			)
+		);
+
+		do_action( 'gutenverse_setting_toolbar', $admin_bar, $root );
+	}
+
+	/**
+	 * Toolbar Items.
+	 *
+	 * @param \WP_Admin_Bar $admin_bar Admin Bar Instance.
+	 */
+	public function not_toolbar( $admin_bar ) {
+		$admin_bar->add_menu(
+			array(
+				'id'     => 'no-template',
+				'parent' => 'gutenverse',
+				'title'  => esc_html__( 'Not a Block Themes', 'gutenverse-form' ),
+			)
+		);
+	}
+
+	/**
+	 * Toolbar Items.
+	 *
+	 * @param \WP_Admin_Bar $admin_bar Admin Bar Instance.
+	 * @param object        $block Block Template.
+	 */
+	public function the_toolbar( $admin_bar, $block ) {
+		if ( $block ) {
+			$is_wp_above_6_4 = version_compare( $GLOBALS['wp_version'], '6.4', '>=' );
+
+			$admin_bar->add_menu(
+				array(
+					'id'     => 'edit-template',
+					'parent' => 'gutenverse',
+					'title'  => esc_html__( 'Edit Template: ', 'gutenverse-form' ) . '<strong>' . $block->title . '</strong>',
+					'href'   => $is_wp_above_6_4 ? ( admin_url( 'site-editor.php' ) . '?postId=' . $block->id . '&postType=' . $block->type . '&canvas=edit' ) : ( admin_url( 'site-editor.php' ) . '?postType=' . $block->type . '&postId=' . $block->id ),
+					'meta'   => array(
+						'target' => 'blank',
+					),
+				)
+			);
+
+			$parts = $this->get_template_parts();
+
+			if ( count( $parts ) > 0 ) {
+				$admin_bar->add_menu(
+					array(
+						'id'     => 'template-part',
+						'parent' => 'gutenverse',
+						'title'  => esc_html__( 'Included Template Part', 'gutenverse-form' ),
+						'href'   => admin_url( 'site-editor.php?postType=wp_template_part' ),
+					)
+				);
+
+				foreach ( $parts as $part ) {
+					$admin_bar->add_menu(
+						array(
+							'id'     => 'edit-template-' . $part['attrs']['slug'],
+							'parent' => 'template-part',
+							'title'  => esc_html__( 'Edit: ', 'gutenverse-form' ) . '<strong>' . $part['attrs']['slug'] . '</strong>',
+							'href'   => $is_wp_above_6_4 ? ( admin_url( 'site-editor.php' ) . '?postId=' . $part['attrs']['theme'] . '//' . $part['attrs']['slug'] . '&postType=wp_template_part&canvas=edit' ) : ( admin_url( 'site-editor.php' ) . '?postType=wp_template_part&postId=' . $part['attrs']['theme'] . '//' . $part['attrs']['slug'] ),
+							'meta'   => array(
+								'target' => 'blank',
+							),
+						)
+					);
+				}
+			}
+		}
+	}
+}

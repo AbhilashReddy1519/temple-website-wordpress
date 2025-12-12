@@ -1,0 +1,1 @@
+.guten-post-content.is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:100%}

@@ -1,0 +1,24 @@
+/*
+Theme Name: Unibiz
+Description: Unibiz is a versatile modern WordPress theme designed for any niche with seamless Full Site Editing support and advanced customization, the first multipurpose theme fully compatible with FSE.
+Author: Jegstudio
+Author URI: https://gutenverse.com
+Theme URI: https://gutenverse.com/unibiz/
+Version: 1.0.6
+Stable tag: 1.0.6
+Requires at least: 6.4
+Tested up to: 6.8
+Requires PHP: 7.0
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: unibiz
+Tags: block-patterns,block-styles,full-site-editing,template-editing,theme-options,right-sidebar
+Copyright: © Jegstudio. All rights reserved.
+*/
+
+:root{
+    
+}
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .block-library-block__reusable-block-container {
+    max-width: 100%;
+}

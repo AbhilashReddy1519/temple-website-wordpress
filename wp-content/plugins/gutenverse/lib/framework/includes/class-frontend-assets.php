@@ -1,0 +1,280 @@
+<?php
+/**
+ * Frontend Assets class
+ *
+ * @author Jegstudio
+ * @since 1.0.0
+ * @package gutenverse-framework
+ */
+
+namespace Gutenverse\Framework;
+
+use WP_Term;
+use WP_Theme_Json_Resolver;
+use WP_User;
+
+/**
+ * Class Frontend Assets
+ *
+ * @package gutenverse
+ */
+class Frontend_Assets {
+	/**
+	 * Init constructor.
+	 */
+	public function __construct() {
+		add_action( 'wp_enqueue_scripts', array( $this, 'frontend_scripts' ), 99 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'frontend_inline_style' ), 999 );
+		add_action( 'gutenverse_enqueue_assets', array( $this, 'enqueue_template_part_assets' ) );
+		add_filter( 'gutenverse_global_css', array( $this, 'global_variable_css' ) );
+	}
+
+	/**
+	 * Enqueue assets for template parts (header/footer)
+	 */
+	public function enqueue_template_part_assets() {
+		if ( is_admin() ) {
+			return;
+		}
+
+		$template_parts = array( 'header', 'footer' );
+		$theme_slug     = get_stylesheet();
+
+		foreach ( $template_parts as $part_slug ) {
+			$template_part_id = $theme_slug . '//' . $part_slug;
+			$template         = get_block_template( $template_part_id, 'wp_template_part' );
+
+			if ( $template && ! empty( $template->content ) ) {
+				$blocks = parse_blocks( $template->content );
+				$this->enqueue_blocks_assets( $blocks );
+			}
+		}
+	}
+
+	/**
+	 * Recursively enqueue assets for blocks
+	 *
+	 * @param array $blocks Parsed blocks.
+	 */
+	private function enqueue_blocks_assets( $blocks ) {
+		foreach ( $blocks as $block ) {
+			if ( ! empty( $block['blockName'] ) ) {
+				$block_name = $block['blockName'];
+				$block_type = \WP_Block_Type_Registry::get_instance()->get_registered( $block_name );
+
+				if ( $block_type ) {
+					if ( ! empty( $block_type->style_handles ) ) {
+						foreach ( $block_type->style_handles as $handle ) {
+							wp_enqueue_style( $handle );
+						}
+					}
+					if ( ! empty( $block_type->script_handles ) ) {
+						foreach ( $block_type->script_handles as $handle ) {
+							wp_enqueue_script( $handle );
+						}
+					}
+				}
+			}
+
+			if ( ! empty( $block['innerBlocks'] ) ) {
+				$this->enqueue_blocks_assets( $block['innerBlocks'] );
+			}
+		}
+	}
+
+	/**
+	 * Global Variable CSS
+	 *
+	 * @param string $result Global Variable CSS.
+	 *
+	 * @return string
+	 */
+	public function global_variable_css( $result = '' ) {
+		$csss = array();
+
+		// RENDER DEVICE WIDTH.
+		$tablet_breakpoint = gutenverse_breakpoint( 'Tablet' );
+		$mobile_breakpoint = gutenverse_breakpoint( 'Mobile' );
+
+		$csss['breakpoint'] = ':root {
+            --guten-screen-xs-max: ' . $mobile_breakpoint . 'px;
+            --guten-screen-sm-min: ' . ( $mobile_breakpoint + 1 ) . 'px;
+            --guten-screen-sm-max: ' . ( $tablet_breakpoint ) . 'px;
+            --guten-screen-md-min: ' . ( $tablet_breakpoint + 1 ) . 'px; 
+        }';
+
+		// RENDER GLOBAL COLORS.
+		$global_colors = array();
+		$current_theme = wp_get_theme();
+		$settings      = WP_Theme_Json_Resolver::get_user_data_from_wp_global_styles( $current_theme );
+
+		if ( ! empty( $settings['post_content'] ) ) {
+			$theme_settings = json_decode( $settings['post_content'], true );
+			$global_colors  = ! empty( $theme_settings['settings']['color']['palette']['custom'] ) ? $theme_settings['settings']['color']['palette']['custom'] : $global_colors;
+		}
+
+		if ( ! empty( $global_colors ) ) {
+			$csss['global_color'] = gutenverse_global_color_style_generator( $global_colors );
+		}
+
+		// RENDER GLOBAL FONTS.
+		$global_fonts = Init::instance()->global_variable->get_global_variable( 'font' );
+
+		if ( ! empty( $global_fonts ) ) {
+			$csss['global_font'] = gutenverse_global_font_style_generator( $global_fonts );
+		}
+
+		$csss['section_inherit'] = $this->section_inherit();
+		$csss['result']          = $result;
+
+		return implode( ' ', $csss );
+	}
+
+	/**
+	 * Inherit secttion if option is on.
+	 */
+	private function section_inherit() {
+		$settings = get_option( 'gutenverse-settings' );
+
+		if ( empty( $settings ) ) {
+			return '';
+		}
+
+		$page_settings  = isset( $settings['template_page'] ) ? $settings['template_page'] : null;
+		$theme_settings = gutenverse_get_theme_settings();
+
+		if ( ! empty( $page_settings ) && isset( $page_settings['inherit_layout'] ) && $page_settings['inherit_layout'] && isset( $theme_settings['layout'] ) && ! empty( $theme_settings['layout']['contentSize'] ) ) {
+			return ".guten-post-content > div.section-wrapper, .wp-block-post-content > div.section-wrapper {
+				max-width: {$theme_settings['layout']['contentSize']}!important; margin-left:auto; margin-right:auto;
+			}";
+		}
+
+		return '';
+	}
+
+	/**
+	 * Frontend Script
+	 */
+	public function frontend_scripts() {
+		/**
+		 * Load custom frontend settings
+		 * Enqueue it in wp-block-library so it will be called early
+		 */
+		wp_enqueue_style( 'wp-block-library' );
+
+		$settings = get_option( 'gutenverse-settings' );
+		$default  = '';
+
+		if ( ! isset( $settings['frontend_settings']['remove_template_part_margin'] ) || $settings['frontend_settings']['remove_template_part_margin'] ) {
+			$default = '.wp-block-template-part{margin-block-start:0;margin-block-end:0;}';
+		}
+
+		$enqueue_default = apply_filters(
+			'gutenverse_remove_default_style',
+			$default,
+			$settings
+		);
+
+		if ( ! empty( $enqueue_default ) ) {
+			wp_add_inline_style( 'wp-block-library', $enqueue_default );
+		}
+		// Custom frontend setting end here.
+
+		wp_localize_script( 'gutenverse-frontend-event', 'GutenverseData', $this->gutenverse_data() );
+
+		do_action( 'gutenverse_include_frontend' );
+		wp_dequeue_style( 'gutenverse-frontend-style' );
+
+		wp_enqueue_style(
+			'gutenverse-frontend-icon',
+			GUTENVERSE_FRAMEWORK_URL_PATH . '/assets/dist/frontend-icon.css',
+			array(),
+			GUTENVERSE_FRAMEWORK_VERSION
+		);
+
+		if ( is_user_logged_in() ) {
+			wp_enqueue_style(
+				'gutenverse-toolbar',
+				GUTENVERSE_FRAMEWORK_URL_PATH . '/assets/dist/toolbar.css',
+				array(),
+				GUTENVERSE_FRAMEWORK_VERSION
+			);
+		}
+	}
+
+	/**
+	 * Frontend style
+	 */
+	public function frontend_inline_style() {
+		wp_enqueue_style( 'gutenverse-frontend-style' );
+	}
+
+	/**
+	 * Get Query Data for API request
+	 *
+	 * @return array
+	 */
+	private function get_template_query() {
+		$search_query = get_search_query();
+		$object_query = get_queried_object();
+		$query        = array();
+
+		$query['q_search'] = ! empty( $search_query ) ? esc_attr( $search_query ) : null;
+
+		if ( ! empty( $object_query ) ) {
+			if ( $object_query instanceof WP_Term ) {
+				switch ( $object_query->taxonomy ) {
+					case 'category':
+						$query['q_category_name'] = $object_query->slug;
+						break;
+					case 'post_tag':
+						$query['q_tag'] = $object_query->slug;
+						break;
+				}
+			}
+
+			if ( $object_query instanceof WP_User ) {
+				$query['q_author'] = $object_query->ID;
+			}
+		}
+
+		return $query;
+	}
+
+	/**
+	 * Gutenverse Config
+	 *
+	 * @return array
+	 */
+	public function gutenverse_data() {
+		$tablet_breakpoint      = gutenverse_breakpoint( 'Tablet' );
+		$mobile_breakpoint      = gutenverse_breakpoint( 'Mobile' );
+		$settings_data          = get_option( 'gutenverse-settings' );
+		$config                 = array();
+		$config['postId']       = get_the_ID();
+		$config['homeUrl']      = home_url();
+		$config['query']        = $this->get_template_query();
+		$config['settingsData'] = ! empty( $settings_data ) ? array(
+			'editor_settings' => isset( $settings_data['editor_settings'] ) ? $settings_data['editor_settings'] : null,
+		) : array();
+		$active_plugins         = get_option( 'active_plugins' );
+		$multisite_plugins      = get_site_option( 'active_sitewide_plugins' );
+		if ( $multisite_plugins ) {
+			$active_plugins_multisite = array_keys( $multisite_plugins );
+			$active_plugins           = array_merge( $active_plugins, $active_plugins_multisite );
+		}
+		$arr_plugin = array();
+		foreach ( $active_plugins as $plugin ) {
+			$arr_plugin[] = $plugin;
+		}
+		$config['activePlugins'] = $arr_plugin;
+		$post_featured           = get_the_post_thumbnail_url( $config['postId'], 'full' );
+		$config['featuredImage'] = ! empty( $post_featured ) ? $post_featured : GUTENVERSE_FRAMEWORK_URL_PATH . '/assets/img/img-placeholder.jpg';
+		$config['breakPoints']   = array(
+			'Tablet' => $tablet_breakpoint,
+			'Mobile' => $mobile_breakpoint,
+		);
+
+		return apply_filters( 'gutenverse_frontend_config', $config );
+	}
+}

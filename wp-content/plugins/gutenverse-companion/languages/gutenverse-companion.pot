@@ -1,0 +1,584 @@
+# Copyright (C) 2025 Jegstudio
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gutenverse Companion 2.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenverse-companion\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-11-06T06:00:19+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: gutenverse-companion\n"
+
+#. Plugin Name of the plugin
+msgid "Gutenverse Companion"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://gutenverse.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Mandatory plugin to install when installing Base themes from Gutenverse."
+msgstr ""
+
+#. Author of the plugin
+msgid "Jegstudio"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://jegtheme.com/"
+msgstr ""
+
+#: includes/class-api.php:85
+#: includes/class-api.php:105
+#: includes/class-api.php:125
+#: includes/class-api.php:145
+#: includes/class-api.php:165
+#: includes/class-api.php:185
+#: includes/class-api.php:205
+#: includes/class-api.php:225
+#: includes/class-api.php:245
+#: includes/class-api.php:265
+#: includes/class-api.php:285
+#: includes/class-api.php:304
+#: includes/class-api.php:323
+#: includes/class-api.php:342
+#: includes/gutenverse-theme/class-gutenverse-theme.php:282
+#: includes/gutenverse-theme/class-gutenverse-theme.php:302
+#: includes/gutenverse-theme/class-gutenverse-theme.php:322
+msgid "Forbidden Access"
+msgstr ""
+
+#: includes/class-dashboard.php:343
+#: includes/class-dashboard.php:344
+#: assets/js/companion.js:2
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-dashboard.php:353
+#: includes/class-dashboard.php:354
+#: assets/js/companion.js:2
+msgid "Demo"
+msgstr ""
+
+#: includes/class-dashboard.php:363
+#: includes/class-dashboard.php:364
+#: assets/js/companion.js:2
+msgid "Settings"
+msgstr ""
+
+#: includes/class-dashboard.php:373
+#: includes/class-dashboard.php:374
+#: assets/js/companion.js:2
+msgid "System Status"
+msgstr ""
+
+#: includes/class-dashboard.php:383
+#: includes/class-dashboard.php:384
+#: assets/js/companion.js:2
+msgid "Need Help?"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Work Smarter, Build Faster"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Boost your productivity with powerful tools designed to speed up website creation."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "1000+ Templates Library."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "50+ Prebuilt Sites."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "100+ Advanced Blocks."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "1000+ Icons Selector."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Upgrade To PRO"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Design Without Limits"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Unlock unlimited creative possibilities and craft a truly stunning website experience."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Advanced Animation Effects."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Transform."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Text Clip."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Highlight Styles."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Animated Shape Dividers."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Mouse Move Effect."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Fluid Background."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Background Effects."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Engage Visitors, Drive Results"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Turn your website into a lead-generation machine and keep your audience engaged."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Gutenverse Form."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Gutenverse Popup."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Gutenverse News."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Why Upgrade to PRO?"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "With Gutenverse PRO, you're not just unlocking extra features—you're unlocking freedom. Freedom to design faster. Freedom to be more creative. Freedom to engage your audience at a whole new level."
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Ready to take your website to the next stage?"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Work Faster"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Limitless Design"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Engage Result"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Upgrade PRO"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Back"
+msgstr ""
+
+#: assets/js/companion.js:2
+#: assets/js/gutenverse-theme-wizard.js:1
+msgid "Next"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Importing “Home” demo in progress..."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Import: Demo Home...."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Important Notice"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Please do not refresh or close the page while importing data is in progress."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Import Demo Completed"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Close"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "View Site"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Completed"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Here’s what will be installed and imported:"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Are you sure you want to switch demos?"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Yes, I want to switch the demo"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Upgrade License"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Active"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Switch Demo"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Import Demo"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "PRO"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Currently Active"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Library Server Down. Please try again later."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "View Demo"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Importing \"%s\" demo in progress..."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Choose Prebuilt Demo"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Discover a wide selection of themes, each carefully crafted to meet the unique needs of your website. Whether you're building a blog, portfolio, or business site."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "No Results Found!"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "It seems we can’t find any results based on your search."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Choose Later"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Choose Demo"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Upgrade Your Site"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Finalizing"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Congratulations All Set 🤩"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "This theme is built with Gutenverse, a powerful and lightweight Gutenberg blocks and page builder plugin for the WordPress Site Editor."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Visit Dashboard"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Thank You For "
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Choosing "
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "To get started, be sure to check out the "
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Documentation"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Importing the demo and style takes only one click. It is easily customizable."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Site Settings"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Control your site’s design and identity settings in one simple place."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Any Questions?"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Our support team is ready to help you with any questions or problems."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Ask For Support"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Build Your Website "
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Faster and Easier"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Quickly launch beautiful websites with just a few clicks."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Start Creating"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Upgrade To "
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Gutenverse PRO"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Unlock the WordPress Editor's potential with Gutenverse PRO."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Thank You For Subscribing Our Newsletter"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "We will inform you about updates, new features, and other infos related to Gutenverse."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Subcsribed"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Join Our Newsletter"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Stay ahead of the curve. Be the first to get exclusive updates on new Gutenverse features"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Your Email"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Subcsribe"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "there is an error requesting subscription."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "please use a valid email address format."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "please input an email address."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Click to upload "
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid " or drag and drop"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Suggested max. file size : 1MB"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Global Styles"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "You can find these global style settings inside the editor."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Global Colors"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Explore the unlimited possibilities of Gutenberg and Full Site Editing using Gutenverse."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Settings Colors"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Global Fonts"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Settings Fonts"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Site Name"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Start branding by giving your website a unique name."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Your site name..."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Site Description"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "This description can help the website appear in relevant search results."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Your site description..."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Logo Favicon"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Set icons for browser tabs. Recommended size: 80 pixels x 80 pixels."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Settings Shortcuts"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Effortlessly build and customize high-performance websites for any purpose—all in one platform."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Reward For"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid " Referral"
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Spread the words and get a reward from us."
+msgstr ""
+
+#: assets/js/companion.js:2
+msgid "Join Our Referal."
+msgstr ""
+
+#: assets/js/notices.js:1
+msgid "Please Update Your Theme."
+msgstr ""
+
+#: assets/js/notices.js:1
+msgid "You're currently using an older version of the theme."
+msgstr ""
+
+#: assets/js/notices.js:1
+msgid "We recommend updating to the latest version to ensure full compatibility with the current version of Gutenverse. Using an outdated theme alongside a newer Gutenverse version may cause conflicts or issues on your site."
+msgstr ""

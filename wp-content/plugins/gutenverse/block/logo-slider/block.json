@@ -1,0 +1,418 @@
+{
+	"apiVersion": 3,
+	"name": "gutenverse/logo-slider",
+	"title": "Logo Slider",
+	"description": "Showcase your clients, sponsors, or a list of images on your website.",
+	"category": "gutenverse-element",
+	"allowCopyStyle": true,
+	"attributes": {
+		"elementId": {
+			"type": "string"
+		},
+		"mouseMoveEffect": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"logos": {
+			"type": "array",
+			"default": [
+				{
+					"title": "One"
+				},
+				{
+					"title": "Two"
+				},
+				{
+					"title": "Three"
+				},
+				{
+					"title": "Four"
+				}
+			]
+		},
+		"imageFixHeight": {
+			"type": "boolean",
+			"default": false,
+			"copyStyle": true
+		},
+		"imageHeight": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageFit": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imagePadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageHoverPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageHoverMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageBorderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "imageBorder",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"imageBoxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageBorderHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"imageBorderHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "imageBorderHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"imageBoxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"transitionDuration": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"filter": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"filterHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"spacing": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"itemShowed": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoplayTimeout": {
+			"type": "integer",
+			"default": 2400
+		},
+		"loop": {
+			"type": "boolean",
+			"default": false
+		},
+		"showNav": {
+			"type": "boolean",
+			"default": false
+		},
+		"showArrow": {
+			"type": "boolean",
+			"default": false
+		},
+		"leftArrow": {
+			"type": "string",
+			"default": "fa fa-angle-left"
+		},
+		"rightArrow": {
+			"type": "string",
+			"default": "fa fa-angle-right"
+		},
+		"arrowPosition": {
+			"type": "string",
+			"default": "bottom-edge"
+		},
+		"dotsSpacingHorizontal": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsSpacingVertical": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsWidth": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsHeight": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsRadius": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsActiveWidth": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsActiveHeight": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsActiveRadius": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dotsActiveColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowFontSize": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowBgColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowOpacity": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowHoverColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowHoverBgColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowHoverPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowHoverMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowHoverOpacity": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowBorderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "arrowBorder",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"arrowBoxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowBorderHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"arrowBorderHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "arrowBorderHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"arrowBoxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"background": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"backgroundHover": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"backgroundTransition": {
+			"type": "object",
+			"copyStyle": true,
+			"default": {}
+		},
+		"border": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"borderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "border",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"boxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderHover": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"borderHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "borderHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"boxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"opacity": {
+			"type": "string",
+			"copyStyle": true
+		},
+		"hoverOpacity": {
+			"type": "string",
+			"copyStyle": true
+		},
+		"margin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"padding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"zIndex": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"animation": {
+			"type": "object",
+			"default": {},
+			"copyStyle": true
+		},
+		"hideDesktop": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"hideTablet": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"hideMobile": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"positioningType": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningWidth": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningAlign": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningLocation": {
+			"type": "string",
+			"copyStyle": true
+		},
+		"positioningLeft": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningRight": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningTop": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"positioningBottom": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"transform": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mask": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"condition": {
+			"type": "object",
+			"default": {}
+		},
+		"logoWrapperMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"logoWrapperPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"logoBackgroundNormal": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"logoBackgroundHover": {
+			"type": "object",
+			"copyStyle": true
+		}
+	},
+	"supports": {
+		"className": false,
+		"anchor": true
+	},
+	"keywords": ["logo", "slider", "image"],
+	"viewScript": ["gutenverse-frontend-client-logo-script"],
+	"style": ["gutenverse-frontend-logo-slider-style"]
+}

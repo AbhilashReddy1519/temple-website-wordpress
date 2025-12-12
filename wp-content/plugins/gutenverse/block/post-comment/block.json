@@ -1,0 +1,521 @@
+{
+	"apiVersion": 3,
+	"name": "gutenverse/post-comment",
+	"class_callback": "\\Gutenverse\\Block\\Post_Comment",
+	"title": "Post Comment",
+	"description": "Show comment section of a single post.",
+	"category": "gutenverse-post",
+	"allowCopyStyle": true,
+	"attributes": {
+		"elementId": {
+			"type": "string"
+		},
+		"postId": {
+			"type": "string",
+			"default": 0
+		},
+		"backendPostId": {
+			"type": "string"
+		},
+		"showForm": {
+			"type": "boolean",
+			"default": true
+		},
+		"enableSuffix": {
+			"type": "boolean",
+			"default": true
+		},
+		"avatarMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"avatarBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"avatarBorderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "avatarBorder",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"suffixMain": {
+			"type": "string",
+			"default": "says:"
+		},
+		"suffixReply": {
+			"type": "string",
+			"default": "replied:"
+		},
+		"enableCommentTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"titleText": {
+			"type": "string",
+			"default": " Comments On "
+		},
+		"enablePostTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"enableCommentCount": {
+			"type": "boolean",
+			"default": true
+		},
+		"noContentText": {
+			"type": "string",
+			"default": "No Content"
+		},
+		"typographyHeading": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"typographyLink": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"typographyLabel": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorHeading": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorLink": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorLabel": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorRequired": {
+			"type": "object",
+			"copyStyle": true,
+			"default": {
+				"a": 1,
+				"r": 255,
+				"g": 0,
+				"b": 0
+			}
+		},
+		"marginHeading": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"typographyText": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorText": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"marginText": {
+			"type": "object",
+			"copyStyle": true
+		},
+
+		"typographyTextList": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorTextList": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"marginTextList": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"suffixTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"suffixColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"suffixMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"typographyCommentTitle": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorCommentTitle": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"marginCommentTitle": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"commentCountTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"commentCountColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"postTitleTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"postTitleColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"marginLink": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"marginLabel": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBorderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "inputBorder",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"inputBorderHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBorderHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "inputBorderHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"inputBorderFocus": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBorderFocusResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "inputBorderFocus",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"typographyButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"marginButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"paddingButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"colorButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"bgcolorButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"bggradientButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderButton": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderButtonResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "borderButton",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"colorButtonHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"bgcolorButtonHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"bggradientButtonHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderButtonHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderButtonHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "borderButtonHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"marginButtonHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"paddingButtonHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"background": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"backgroundHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"backgroundTransition": {
+			"type": "object",
+			"copyStyle": true,
+			"default": {}
+		},
+		"border": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "border",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"boxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"borderHoverResponsive": {
+			"type": "object",
+			"migrate": {
+				"attr": "borderHover",
+				"type": "border"
+			},
+			"copyStyle": true
+		},
+		"boxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"margin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"padding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"zIndex": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"animation": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"hideDesktop": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"hideTablet": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"hideMobile": {
+			"type": "boolean",
+			"copyStyle": true
+		},
+		"transform": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mask": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputColorNormal": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputColorHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputColorFocus": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBgColorNormal": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBgColorHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputBgColorFocus": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputAreaBoxShadow": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputAreaBoxShadowHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"inputPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"condition": {
+			"type": "object",
+			"default": {}
+		},
+
+		"userNameTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"userNameColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"userNameMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dateTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dateColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"dateMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"replyLinkTypography": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"replyLinkColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"replyLinkMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"replyBgColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"replyMargin": {
+			"type": "object",
+			"copyStyle": true,
+			"default": {
+				"Desktop": {
+					"unit": "px",
+					"dimension": {
+						"top": "",
+						"right": "",
+						"bottom": "",
+						"left": "20"
+					}
+				}
+			}
+		},
+		"replyPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"replyBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainBgColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainBorder": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainContainerBgColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainContainerMargin": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainContainerPadding": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"mainContainerBorder": {
+			"type": "object",
+			"copyStyle": true
+		}
+	},
+	"usesContext": ["postId", "postType"],
+	"supports": {
+		"className": false,
+		"anchor": true
+	},
+	"keywords": ["single", "post", "comment"],
+	"viewScript": ["gutenverse-frontend-post-comment-script"],
+	"style": ["gutenverse-frontend-post-comment-style"]
+}

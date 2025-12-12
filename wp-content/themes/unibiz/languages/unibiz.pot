@@ -1,0 +1,508 @@
+# Copyright (C) 2025 Jegstudio
+# This file is distributed under the GNU General Public License v3 or later..
+msgid ""
+msgstr ""
+"Project-Id-Version: Unibiz 6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/unibiz\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-12-08T05:23:38+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: unibiz\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/class/class-init.php:1173
+msgid "Unibiz"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://gutenverse.com/unibiz/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+#: inc/class/class-init.php:1174
+msgid "Unibiz is a versatile modern WordPress theme designed for any niche with seamless Full Site Editing support and advanced customization, the first multipurpose theme fully compatible with FSE."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Jegstudio"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://gutenverse.com"
+msgstr ""
+
+#: inc/class/class-block-patterns.php:57
+msgid "Unibiz Core Patterns"
+msgstr ""
+
+#: inc/class/class-block-patterns.php:61
+msgid "Unibiz Gutenverse Patterns"
+msgstr ""
+
+#: inc/class/class-block-patterns.php:62
+msgid "Unibiz Gutenverse PRO Patterns"
+msgstr ""
+
+#: inc/class/class-init.php:1175
+msgid "Plugin Requirement"
+msgstr ""
+
+#: inc/class/class-init.php:1176
+msgid "This theme require some plugins. Please make sure all the plugin below are installed and activated."
+msgstr ""
+
+#: inc/class/class-init.php:1182
+msgid "Install Gutenverse Plugin"
+msgstr ""
+
+#: inc/class/class-init.php:1183
+msgid "Activate Gutenverse Plugin"
+msgstr ""
+
+#: inc/class/class-init.php:1184
+msgid "Gutenverse Plugin Installed"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:322
+msgid "Installing..."
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:351
+msgid "Install Failed, Try Again"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:360
+msgid "Thankyou For Installing Unibiz Theme"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:362
+msgid "Unlock the full potential of your website with the recommended plugins."
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:364
+msgid "Activate it to explore exclusive extensions, ready-to-use demo templates, and powerful features that make building your site easier and more enjoyable."
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:367
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: inc/patterns/unibiz-archive-core-hero.php:6
+msgid "Unibiz Archive Core Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-archive-gutenverse-hero.php:6
+msgid "Unibiz Archive Gutenverse Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-core-404.php:6
+msgid "Unibiz Core 404"
+msgstr ""
+
+#: inc/patterns/unibiz-core-footer-alternate.php:6
+msgid "Unibiz Core Footer Alternate"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-about.php:6
+msgid "Unibiz Core Home About"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-authority.php:6
+msgid "Unibiz Core Home Authority"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-benefits.php:6
+msgid "Unibiz Core Home Benefits"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-blog.php:6
+msgid "Unibiz Core Home Blog"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-clients.php:6
+msgid "Unibiz Core Home Clients"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-hero.php:6
+msgid "Unibiz Core Home Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-services.php:6
+msgid "Unibiz Core Home Services"
+msgstr ""
+
+#: inc/patterns/unibiz-core-home-testimonials.php:6
+msgid "Unibiz Core Home Testimonials"
+msgstr ""
+
+#: inc/patterns/unibiz-core-post-block.php:6
+msgid "Unibiz Core Post Block"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-404.php:6
+msgid "Unibiz Gutenverse 404"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-footer-alternate.php:6
+msgid "Unibiz Gutenverse Footer Alternate"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-footer.php:6
+msgid "Unibiz Gutenverse Footer"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-header-alternate.php:6
+msgid "Unibiz Gutenverse Header Alternate"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-header.php:6
+msgid "Unibiz Gutenverse Header"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-about.php:6
+msgid "Unibiz Gutenverse Home About"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-authority.php:6
+msgid "Unibiz Gutenverse Home Authority"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-benefits.php:6
+msgid "Unibiz Gutenverse Home Benefits"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-blog.php:6
+msgid "Unibiz Gutenverse Home Blog"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-clients.php:6
+msgid "Unibiz Gutenverse Home Clients"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-hero.php:6
+msgid "Unibiz Gutenverse Home Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-services.php:6
+msgid "Unibiz Gutenverse Home Services"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-home-testimonials.php:6
+msgid "Unibiz Gutenverse Home Testimonials"
+msgstr ""
+
+#: inc/patterns/unibiz-gutenverse-post-block.php:6
+msgid "Unibiz Gutenverse Post Block"
+msgstr ""
+
+#: inc/patterns/unibiz-index-core-hero.php:6
+msgid "Unibiz Index Core Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-index-gutenverse-hero.php:6
+msgid "Unibiz Index Gutenverse Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-page-core-content.php:6
+msgid "Unibiz Page Core Content"
+msgstr ""
+
+#: inc/patterns/unibiz-page-core-hero.php:6
+msgid "Unibiz Page Core Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-page-gutenverse-content.php:6
+msgid "Unibiz Page Gutenverse Content"
+msgstr ""
+
+#: inc/patterns/unibiz-page-gutenverse-hero.php:6
+msgid "Unibiz Page Gutenverse Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-page-no-sidebar-core-content.php:6
+msgid "Unibiz Page No Sidebar Core Content"
+msgstr ""
+
+#: inc/patterns/unibiz-page-no-sidebar-core-hero.php:6
+msgid "Unibiz Page No Sidebar Core Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-page-no-sidebar-gutenverse-content.php:6
+msgid "Unibiz Page No Sidebar Gutenverse Content"
+msgstr ""
+
+#: inc/patterns/unibiz-page-no-sidebar-gutenverse-hero.php:6
+msgid "Unibiz Page No Sidebar Gutenverse Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-search-core-hero.php:6
+msgid "Unibiz Search Core Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-search-core-search.php:6
+msgid "Unibiz Search Core Search"
+msgstr ""
+
+#: inc/patterns/unibiz-search-gutenverse-hero.php:6
+msgid "Unibiz Search Gutenverse Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-search-gutenverse-search.php:6
+msgid "Unibiz Search Gutenverse Search"
+msgstr ""
+
+#: inc/patterns/unibiz-single-core-content.php:6
+msgid "Unibiz Single Core Content"
+msgstr ""
+
+#: inc/patterns/unibiz-single-core-hero.php:6
+msgid "Unibiz Single Core Hero"
+msgstr ""
+
+#: inc/patterns/unibiz-single-gutenverse-content.php:6
+msgid "Unibiz Single Gutenverse Content"
+msgstr ""
+
+#: inc/patterns/unibiz-single-gutenverse-hero.php:6
+msgid "Unibiz Single Gutenverse Hero"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page No Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank Canvas"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Placeholder"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent Hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Border"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Border Input"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Placeholder"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent Hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border Input"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Host Grotesk"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Massive"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Gigantic"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Mega"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Jumbo"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Largest"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Big"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Standard"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Tiny"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Little"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Mini"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""

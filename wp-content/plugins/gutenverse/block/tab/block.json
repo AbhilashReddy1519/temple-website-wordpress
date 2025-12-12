@@ -1,0 +1,36 @@
+{
+	"apiVersion": 3,
+	"name": "gutenverse/tab",
+	"title": "Tab Item",
+	"description": "Create content inside a tab element",
+	"category": "gutenverse-element",
+	"parent": ["gutenverse/tabs"],
+	"example": {},
+	"attributes": {
+		"elementId": {
+			"type": "string"
+		},
+		"tabId": {
+			"type": "string"
+		},
+		"active": {
+			"type": "boolean",
+			"default": false
+		},
+		"first": {
+			"type": "boolean",
+			"default": false
+		},
+		"condition": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"variations": [],
+	"supports": {
+		"className": false,
+		"html": false
+	},
+	"keywords": ["tabs", "accordions", "expand"],
+	"style": ["gutenverse-frontend-tab-style"]
+}

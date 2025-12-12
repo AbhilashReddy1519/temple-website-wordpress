@@ -1,0 +1,107 @@
+{
+	"apiVersion": 3,
+	"name": "gutenverse/accordion",
+	"title": "Accordion Item",
+	"description": "Create content inside an accordion element.",
+	"category": "gutenverse-element",
+	"parent": ["gutenverse/accordions"],
+	"attributes": {
+		"elementId": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": ".accordion-heading .accordion-text",
+			"default": ""
+		},
+		"titleChilds": {
+			"type": "array",
+			"default": []
+		},
+		"first": {
+			"type": "boolean",
+			"default": false
+		},
+		"iconOpen": {
+			"type": "string",
+			"default": "fas fa-minus"
+		},
+		"iconClosed": {
+			"type": "string",
+			"default": "fas fa-plus"
+		},
+
+		"dynamicDataList": {
+			"type": "array",
+			"default": []
+		},
+		"openDynamic": {
+			"type": "string"
+		},
+		"dynamicTextContent": {
+			"type": "array",
+			"copyStyle": true
+		},
+		"dynamicUrlContent": {
+			"type": "array",
+			"copyStyle": true
+		},
+		"iconPosition": {
+			"type": "string",
+			"default": "left"
+		},
+		"titleTag": {
+			"type": "string",
+			"default": "span"
+		},
+		"advanceAnimation": {
+			"type": "object",
+			"default": {}
+		},
+		"contentBackgroundColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentBackgroundColorClosed": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentBackgroundColorHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentTextColor": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentTextColorClosed": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentTextColorHover": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentBackgroundGradient": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentBackgroundGradientClosed": {
+			"type": "object",
+			"copyStyle": true
+		},
+		"contentBackgroundGradientHover": {
+			"type": "object",
+			"copyStyle": true
+		}
+	},
+	"supports": {
+		"className": false,
+		"html": false,
+		"innerBlocks": true,
+		"anchor": true
+	},
+	"keywords": ["tabs", "accordions", "dropdown", "expand", "panels"],
+	"style": ["gutenverse-frontend-accordion-style"]
+}

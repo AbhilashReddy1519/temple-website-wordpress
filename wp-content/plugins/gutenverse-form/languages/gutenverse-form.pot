@@ -1,0 +1,5198 @@
+# Copyright (C) 2025 Jegstudio
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gutenverse Form 2.3.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenverse-form\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-12-11T07:36:12+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: gutenverse-form\n"
+
+#. Plugin Name of the plugin
+#: assets/js/dashboard.js:1
+msgid "Gutenverse Form"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://gutenverse.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Powerful and intuitive form builder plugin designed to streamline the process of creating and managing forms on your WordPress website."
+msgstr ""
+
+#. Author of the plugin
+msgid "Jegstudio"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://jegtheme.com/"
+msgstr ""
+
+#: includes/class-entries.php:72
+msgid "All Form"
+msgstr ""
+
+#: includes/class-entries.php:309
+msgid "no-form"
+msgstr ""
+
+#: includes/class-entries.php:318
+msgid "no-referral"
+msgstr ""
+
+#: includes/class-entries.php:330
+msgid "Checkbox"
+msgstr ""
+
+#: includes/class-entries.php:331
+#: includes/class-form.php:63
+#: lib/framework/assets/js/core.js:2
+msgid "Title"
+msgstr ""
+
+#: includes/class-entries.php:332
+#: includes/class-form.php:46
+#: includes/class-form.php:47
+#: assets/js/dashboard.js:1
+msgid "Form"
+msgstr ""
+
+#: includes/class-entries.php:333
+msgid "Referral"
+msgstr ""
+
+#: includes/class-entries.php:334
+#: includes/class-form.php:66
+msgid "Date"
+msgstr ""
+
+#: includes/class-entries.php:348
+msgid "Entry"
+msgstr ""
+
+#: includes/class-entries.php:359
+msgid "Entry #"
+msgstr ""
+
+#: includes/class-entries.php:377
+#: includes/class-entries.php:378
+#: includes/class-entries.php:379
+#: includes/class-form.php:64
+msgid "Entries"
+msgstr ""
+
+#: includes/class-entries.php:380
+msgid "New Entries"
+msgstr ""
+
+#: includes/class-entries.php:381
+msgid "Create Entry"
+msgstr ""
+
+#: includes/class-entries.php:382
+msgid "View Entry Option"
+msgstr ""
+
+#: includes/class-entries.php:383
+msgid "New Entry"
+msgstr ""
+
+#: includes/class-entries.php:384
+msgid "View Entry"
+msgstr ""
+
+#: includes/class-entries.php:385
+msgid "Search Entry"
+msgstr ""
+
+#: includes/class-entries.php:386
+#: includes/class-form.php:185
+msgid "No entry found"
+msgstr ""
+
+#: includes/class-entries.php:387
+msgid "No Entry in Trash"
+msgstr ""
+
+#: includes/class-entries.php:390
+msgid "Gutenverse Form Entries"
+msgstr ""
+
+#: includes/class-entries.php:420
+msgid "Form Info"
+msgstr ""
+
+#: includes/class-entries.php:430
+msgid "Entry Info"
+msgstr ""
+
+#: includes/class-entries.php:440
+#: includes/class-mail.php:164
+msgid "Browser Info"
+msgstr ""
+
+#: includes/class-entries.php:462
+msgid "empty"
+msgstr ""
+
+#: includes/class-entries.php:490
+msgid "Form is not set"
+msgstr ""
+
+#: includes/class-entries.php:492
+msgid "Not found"
+msgstr ""
+
+#: includes/class-form-validation.php:177
+msgid "Form action is missing, please assign form action into this form."
+msgstr ""
+
+#: includes/class-form.php:65
+msgid "Author"
+msgstr ""
+
+#: includes/class-form.php:100
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class-form.php:176
+#: includes/class-form.php:177
+#: includes/class-form.php:178
+#: includes/class-frontend-toolbar.php:36
+msgid "Form Action"
+msgstr ""
+
+#: includes/class-form.php:179
+msgid "New Form Action"
+msgstr ""
+
+#: includes/class-form.php:180
+#: assets/js/form.js:2
+msgid "Create Form"
+msgstr ""
+
+#: includes/class-form.php:181
+msgid "Edit Form Option"
+msgstr ""
+
+#: includes/class-form.php:182
+msgid "New Form Entry"
+msgstr ""
+
+#: includes/class-form.php:183
+msgid "View Form"
+msgstr ""
+
+#: includes/class-form.php:184
+msgid "Search Form"
+msgstr ""
+
+#: includes/class-form.php:186
+msgid "No Form in Trash"
+msgstr ""
+
+#: includes/class-form.php:189
+msgid "Gutenverse Form Action"
+msgstr ""
+
+#: includes/class-form.php:321
+msgid " Clone"
+msgstr ""
+
+#: includes/class-frontend-toolbar.php:45
+msgid "Form Entries"
+msgstr ""
+
+#: includes/class-mail.php:60
+msgid "Error. User email not found."
+msgstr ""
+
+#: includes/class-mail.php:89
+msgid "Submission"
+msgstr ""
+
+#: includes/class-mail.php:94
+msgid "Entry Details"
+msgstr ""
+
+#: includes/class-mail.php:111
+msgid "Error. Notification email not found."
+msgstr ""
+
+#: includes/class-mail.php:146
+msgid "Form ID"
+msgstr ""
+
+#: includes/class-mail.php:148
+msgid "Post ID"
+msgstr ""
+
+#: includes/class-mail.php:152
+msgid "Entry ID"
+msgstr ""
+
+#: includes/class-mail.php:154
+msgid "Entry Data"
+msgstr ""
+
+#. translators: 1: Time from now.
+#: lib/framework/helper.php:275
+msgid "%s ago"
+msgstr ""
+
+#: lib/framework/helper.php:1188
+#: lib/framework/helper.php:1207
+msgid "Forbidden Access"
+msgstr ""
+
+#: lib/framework/includes/block/class-block-abstract.php:216
+msgid "This content is password protected. To view it please enter this post password below:"
+msgstr ""
+
+#: lib/framework/includes/block/class-block-abstract.php:219
+msgid "Enter"
+msgstr ""
+
+#: lib/framework/includes/block/class-post-abstract.php:161
+msgid " - Updated on "
+msgstr ""
+
+#: lib/framework/includes/block/class-post-abstract.php:769
+#: lib/framework/includes/block/class-post-abstract.php:859
+msgid "Prev"
+msgstr ""
+
+#: lib/framework/includes/block/class-post-abstract.php:804
+#: lib/framework/includes/block/class-post-abstract.php:929
+msgid "Next"
+msgstr ""
+
+#: lib/framework/includes/class-api.php:1040
+#: lib/framework/includes/class-api.php:1193
+#: lib/framework/assets/js/components.js:2
+msgid "All"
+msgstr ""
+
+#: lib/framework/includes/class-blocks.php:41
+msgid "Gutenverse Wrapper"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:342
+#: lib/framework/includes/class-dashboard.php:344
+#: lib/framework/includes/class-dashboard.php:345
+msgid "unknown"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:347
+#: lib/framework/assets/js/dashboard.js:2
+msgid "by"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:833
+#: lib/framework/includes/class-dashboard.php:834
+#: lib/framework/includes/class-frontend-toolbar.php:121
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Gutenverse"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:854
+#: lib/framework/includes/class-dashboard.php:855
+#: lib/framework/includes/class-frontend-toolbar.php:219
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Dashboard"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:864
+#: lib/framework/includes/class-dashboard.php:865
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Ecosystem"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:874
+#: lib/framework/includes/class-dashboard.php:875
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Blocks"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:885
+#: lib/framework/includes/class-dashboard.php:886
+#: lib/framework/includes/class-dashboard.php:895
+#: lib/framework/includes/class-dashboard.php:896
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Themes"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:906
+#: lib/framework/includes/class-dashboard.php:907
+#: lib/framework/includes/class-frontend-toolbar.php:237
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Settings"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:916
+#: lib/framework/includes/class-dashboard.php:917
+#: lib/framework/includes/class-frontend-toolbar.php:246
+#: lib/framework/assets/js/dashboard.js:2
+msgid "System Status"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:926
+#: lib/framework/includes/class-dashboard.php:927
+#: lib/framework/includes/class-frontend-toolbar.php:255
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Update Notice"
+msgstr ""
+
+#: lib/framework/includes/class-dashboard.php:937
+#: lib/framework/includes/class-dashboard.php:938
+#: lib/framework/includes/class-frontend-toolbar.php:198
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:45
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Custom Font"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:46
+msgid "System"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:47
+msgid "Google"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1908
+#: lib/framework/includes/class-fonts.php:1931
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Normal"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1909
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Bold"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1932
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Italic"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1945
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Uppercase"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1946
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Capitalize"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1947
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Lowercase"
+msgstr ""
+
+#: lib/framework/includes/class-fonts.php:1948
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "None"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-cache.php:305
+msgid "Once a Year"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-cache.php:309
+msgid "Once a Month"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-cache.php:313
+msgid "Every Week"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-cache.php:317
+msgid "Once Every 2 Days"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-cache.php:321
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Daily"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-cache.php:325
+msgid "Once Every 5 Minutes"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:156
+msgid "Gutenverse Admin"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:165
+msgid "Gutenverse Pulse"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:228
+msgid "Block List"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:266
+msgid "Template Editor"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:282
+msgid "Rate Us "
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:294
+msgid "All Template"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:303
+msgid "Template Part"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:312
+msgid "Got Question?"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:324
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Documentation"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:345
+msgid "Not a Block Themes"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:364
+msgid "Edit Template: "
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:379
+msgid "Included Template Part"
+msgstr ""
+
+#: lib/framework/includes/class-frontend-toolbar.php:389
+msgid "Edit: "
+msgstr ""
+
+#: lib/framework/includes/class-import-template.php:39
+msgid "Thank you for installing Gutenverse templates!"
+msgstr ""
+
+#. translators: %2$s site editor url.
+#: lib/framework/includes/class-import-template.php:42
+msgid "%1$s %2$s"
+msgstr ""
+
+#: lib/framework/includes/class-import-template.php:43
+msgid " Check out your tempates in "
+msgstr ""
+
+#: lib/framework/includes/class-import-template.php:47
+msgid "Fullsite Editor."
+msgstr ""
+
+#: lib/framework/includes/class-init.php:783
+msgid "Primary Navigation"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Title"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Helper"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Please put input element inside Form Builder"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Example"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Show Error Notice Example inside the Editor."
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Alignment"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Align Left"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Align Center"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Align Right"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Text Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Border"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Box Shadow"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Choose Form Action"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Hide After Submit"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Redirect To"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Example"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Show Success Notice Example inside the Editor."
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Text Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Form Setting"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success Notice Styling"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Error Notice Styling"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Sticky"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Background"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Masking"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Display"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Animation Effects"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Transform"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Mouse Move Effect"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Spacing"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "How to use form builder"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Adding inputs"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Click the + symbol on form builder block, then search for inputs you need (\"checkbox\", \"text\", \"email\", etc). Also don't forget to add \"submit button\""
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Creating your form setting"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "You need to create a form first from your \"Dashboard -> Form.\""
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selecting your form setting"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "In the \"Form Setting\" below, you can click \"Choose Form Action\" and type your form's name to search it."
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Placeholder Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Color Normal"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Background Color Normal"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Color Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Background Color Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Color Focus"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Background Color Focus"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Hover Box Shadow"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Required"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Check this option to make user required to fill this input"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Warning Message"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Validation message if the required input is incorrect"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Show Icon"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Alignment"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Type"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Size"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Set Lazy Load"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Image Alt"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Image Width"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Image Height"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Rotate"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Color Mode"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Normal Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Normal Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Color Gradient"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Background Gradient"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Hover Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Hover Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Focus Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Focus Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Min Number"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Max Number"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Number Step"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Content"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Validation"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Logic"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Style"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Main Wrapper"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Style"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+msgid "Positioning"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Validation Type"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Minimum Length"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Maximum Length"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Textarea height"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Textarea height in px unit"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Helper Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Helper Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Helper Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Warning Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Warning Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Site Key"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Put your site key here. Only use \"Recaptcha type v2\" and \"I'm not a Robot\" Checkbox for your google Captcha settings"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "RECAPTCHA"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Width"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Title Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Require Indicator Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Show Label"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Position"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Show Helper"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Display helper texts below the input field"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Placeholder"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Exclude Placeholder"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Prevent the placeholder from appearing in the dropdown list of select options."
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input ID"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "This will be identifier used in your entries, make sure the name is unique."
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Date Range"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Date Format"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Set Minimum date"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Set Maximum date"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Settings"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "OFF Text"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "ON Text"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Switcher Width"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Switcher Height"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Off Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Off Button Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Off Text Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "On Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "On Button Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "On Text Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Option Display"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Select how options are stacked"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label Space"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Size"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Space"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Label Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Label Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Active Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Options"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Label"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Value"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Content"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Size"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Space"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Label Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Active Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Radio Options"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Link Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Checkbox Link Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "GDPR Label"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "GDPR Default Value"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Will not show on editor, only in frontend"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "GDPR Form Value"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Value that will be recorded in Form Action"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Text Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Text Color Normal"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Background Color Normal"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Border Normal"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Text Color Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Background Color Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Border Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selected Text Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selected Background Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selected Border Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selected Border Radius"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Select Options"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selected"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Disabled"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Select Content"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Selected Style"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Phone Pattern"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Put your telephone number pattern to give clue to your user"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Text Color Normal"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Input Text Color Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Typography"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Text Color Selected"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Wrapper Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Wrapper Margin"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Background"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Border"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Box Shadow"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Background Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Border Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Wrapper Box Shadow Hover"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Custom Dropdown Icon"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Check this to change dropdown icon"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Open"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Open Icon Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Open Icon Size"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Close"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Close Icon Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Close Icon Size"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Dropdown"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Style"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Options Wrapper Style"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Button Alignment"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Default"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Info"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Success"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Warning"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Danger"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Extra Small"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Small"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Medium"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Large"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Extra Large"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Set Width"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Before"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "After"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Icon Spacing"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Button Padding"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Loading Icon Size"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Loading Color"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Button"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Style"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Loading Indicator"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Button Background"
+msgstr ""
+
+#: assets/js/blocks.js:2
+msgid "Button Border"
+msgstr ""
+
+#: assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Choose Icon"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Confirmation Mail to User (Default Setting)"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "This setting will be the default for \"confirmation email to user\" when you create a new form."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Confirmation Mail to User"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Send confirmation email to user. (To be able to send email, please make sure you've setup SMTP correctly)."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Auto Select Email"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "This will automatically select emails inputted from email's fields."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Use Input's Name"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Only the selected input name will be sent email. (e.g : input-email)."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Email's Subject"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "This will be your email's subject or title."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Email's Sender"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Enter the sender email by which you want to send email to user. (Please make sure you use the same email in your SMTP setup)."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Email's Reply Target"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Enter email where user can reply/ you want to get reply."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Messages to User"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Enter your messages to include it in email's body which will be send to user."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Save Changes"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Notification Mail to Admin (Default Setting)"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "This setting will be the default for \"admin notification\" when you create a new form."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Notification Mail to Admin"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Send notification email to you or your admin. (To be able to send email, please make sure you've setup SMTP correctly)."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Email Subject"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Email's Recipient"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Enter admin email where you want to send mail (For multiple email addresses please use \",\" as separator)."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Enter the sender email by which you want to send email to admin. (Please make sure you use the same email in your SMTP setup)."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Enter email where admin can reply/ you want to get reply."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+#: assets/js/form.js:2
+msgid "Messages to Admin"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Enter your messages to include it in email's body which will be send to admin."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Form Captcha Settings"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "This setting will be used in form reCaptcha feature"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Captcha Secret Key"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Enter your captcha secret here."
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "User Confirmation"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Admin Notification"
+msgstr ""
+
+#: assets/js/dashboard.js:1
+msgid "Version 1.0.0"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Form Title"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "This title will be searchable in Gutenverse Form Builder Block."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Require Login"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Hide form if the user is not logged in."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Capture User Browser Data"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Store user's browser data such as ip, browser name, etc. (If you served website for countries with GDPR law, please make sure you've setup notice for your user regarding the datas you collect.)"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Success Notice on Submit"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "This will be your success notice when form is successfully submitted. (If empty, notice will not be showed)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Error Notice on Submit"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "This will be your error notice when form is failed on submit. (If empty, notice will not be showed)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Use Captcha"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Check this if you want to use captcha."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "This will automatically select emails inputted from email's fields. Please make sure the input field is \"email\" and not \"text\""
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "This will be your email's subject or title. (e.g : Thank you for your submission)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Enter email where user can reply/ you want to get reply. (e.g : supportreply@email.com)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Enter your messages to include it in email's body which will be send to user. (e.g : Thank you for your participation in the survey!)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "This will be your email's subject or title. (e.g : User submission)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Enter email where admin can reply/ you want to get reply. (e.g : admnreply@email.com)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Enter your messages to include it in email's body which will be send to admin. (e.g : A submission from user with the following data.)."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "General"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Confirmation"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Notification"
+msgstr ""
+
+#: assets/js/form.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Pro"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Please make sure you have setup SMTP first to be able to use this form full functionality, otherwise the form will not be able to send email. "
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Please check this "
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "documentation"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid " on how to use our form."
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Upgrade to Gutenverse Pro"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Explore the full potential of Gutenverse Form"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Create Form Action"
+msgstr ""
+
+#: assets/js/form.js:2
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Cancel"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Edit Form Action"
+msgstr ""
+
+#: assets/js/form.js:2
+msgid "Edit Form"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Back"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Select Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Section variations"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "1 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "2 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "3 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "4 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "5 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid " 2 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "50 / 50"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "66 / 33"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "33 / 66"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid " 3 Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "33 / 33 / 33"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "25 / 25 / 50"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "25 / 50 / 25"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "50 / 25 / 25"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "17 / 66 / 17"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Fullwidth Section"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Normal Width Section"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Change section width"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Content Width"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Container Width"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Wrap Column 100%"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "This option only show if you have set the value in old version of the section."
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Column Gap"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "No gap"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Narrow"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Extended"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Wide"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Wider"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Height"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Minimum Height"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Fit Screen"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Column Position"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Stretch"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Top"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Middle"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Bottom"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Vertical Align"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Space Between"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Space Around"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Space Evenly"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Overflow"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "\"overflow:clip\" May not work on safari"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Hidden"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Auto"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Clip"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Overflow Clip Margin"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "The \"clip margin\" sets the boundaries where the overflow is hidden."
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Please Select Column for your Section."
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Blur"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Blur Hover"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/components.js:2
+msgid "Layouts"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Structure"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Cursor Effect"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Background Effect"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Background Animated"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Shape Divider"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Shape Divider Animated"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Advanced Animation"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Background Overlay"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Pointer Event"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Typography"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Add Column"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Display Type"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Custom Width"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Custom Height"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Inner Wrap Width"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Horizontal Align"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Display Overflow"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Position Type"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Left Orientation"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Right Orientation"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Top Orientation"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Bottom Orientation"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Wrapper Display"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Position"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Background Animation"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Force Column 100%"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "This will force the column width to be 100%."
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Column Width"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Column Order"
+msgstr ""
+
+#: lib/framework/assets/js/blocks.js:2
+msgid "Remove Column"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "If recovery doesn't work, you can try reseting your template. Visit this All template Link to reset Template."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Reset Template"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Copy Style"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Gutenverse \"%s\" Style Copied"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Paste Style"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Gutenverse Style Pasted"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Failed! Please paste style to same block type"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Failed to Paste Style"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Unable to read Paste Style"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Import Section Notice"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "We can't import content because the Post Content is missing from your Template. Would you like to switch to Post View instead in order to import the content?"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Keep Import"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Dismiss"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Upgrade To PRO"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Activate License"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Renew License"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Fetching Data"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Importing Assets"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Deploying Content"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Manage Required Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Import this page"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Importing "
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Plugin Requirements"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "There is plugin need to be installed or updated for this layout work correctly."
+msgid_plural "There are %s plugins need to be installed or updated for this layout work correctly."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Manage Plugin Requirement →"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "View Demo"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "by "
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Liked"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Like"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "No Result Found"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "It seems we can't find any results based on your search."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Installing Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Disabling Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Deleting Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Activating Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Go to Plugin Page"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Install Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Update & Activate Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Activate Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Update Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Installed & Activated"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Installed version %s"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Required version %s or later"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Attention!"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please refresh this page after install or update plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Plugin Requirement"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please install or update and activate these missing requirements plugin for this section or layout to work correctly. We recommend to backup your site before install/update plugin listed below."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Load More"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Search Layout"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Licenses"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Categories"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Color"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Welcome to Gutenverse Library"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Discover "
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid " Premium Layouts "
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid " and Sections You Never Meet Before!"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Basic"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Professional"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Agency"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Enterprise"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Free"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "PRO"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Back to %s"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Back to Layouts"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Import this section"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Preview Section"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Import on Progress"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Missing Requirement"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Click for more detail"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "There is plugin need to be installed or updated for this section work correctly."
+msgid_plural "There are %s plugins need to be installed or updated for this section work correctly."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Back to sections"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Back to Favorite Layout"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Back to Favorite sections"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Library"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Layout"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Section"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Explore Prebuilt Sites"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Explore 50+ prebuilt sites designed to fit any website need, including blogs, portfolios, and business sites. Please note, this library is for preview only—to import a demo, go to the "
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Unibiz Dashboard"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "This library only shows the demo list. To import a demo, go to the Unibiz Dashboard."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Go To Unibiz Dashboard"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Install Unibiz Theme"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Install Gutenverse Companion"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Supercharge Gutenverse"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "With"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Unibiz Theme!"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The Official Theme for Gutenverse"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "50+ Stunning Demo Sites"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "One-Click Full Site Import"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Exclusive Template Library"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "2x Faster Site Performance"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Experience a Next-Level FSE Theme"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Learn More"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "By clicking “Install Unibiz Theme” you consent to installing and activating the Gutenverse Companion plugin."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Unlock The Power of"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid " Unibiz Theme!"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Install the Gutenverse Companion plugin to access 50+ professionally designed demo templates and easily create a fast, powerful, and stunning website that fits your every need."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Import Failed!"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "You are on Show Template mode. Click to go into Content Editing."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "You are currently in Content Editing mode. Click to go to Show Template mode."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Prebuilt Sites"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Sections"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Favorite"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Updating ..."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Gutenverse Library"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Current color and font variables are tied to your current active theme."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "CSS Variable"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Color Variable"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Font Variable"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Custom CSS"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Custom JS"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Edit"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Delete"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Refresh"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Font Family"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Size"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Weight"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Decoration"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Underline"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Overline"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Line Through"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Line Height"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Oblique"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Letter Spacing"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Typography Slug"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Unlock to edit slug"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Font Slug Edit is Locked"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Warning: All blocks assigned to this will lose their font. Only unlock if you understand the consequences"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Unlock Slug"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Delete Font Variable?"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "You are about to delete one of your Font Variable. If you are assign this variable to blocks, it will lost the typography."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Color Picker"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Color Slug"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Color Slug Edit is Locked"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Warning: Changing this will cause all assigned blocks to lose their color. Only proceed if you fully understand the consequences."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Delete Color Variable?"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "You are about to delete one of your Color Variable. If you are assign this color variable to blocks, it will lost the color."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Variable Color"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Custom Colors"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Empty Variable Color"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Add Color"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Default Colors"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Theme Colors"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Variable Font"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Where it shown?"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "All Font Registered on this panel, will shown on each typography option of block."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "What happened if i change this option."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "By Changing this option, you will also change every block typograhpy assigned to this option."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Save Behaviour"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Option will automatically saved after you change it."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/core.js:2
+msgid "Empty Variable Font"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Create Font"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Add Font"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Unlock Custom CSS"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Have a styling you need to fix? You can do your own custom CSS for each page."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Unlock Custom JS"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Need to run a specific script? You can do your own custom JS for each page."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "%s Block%s Recovered"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Missing Gutenverse Block"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Some blocks are missing. Please check if any blocks are disabled or if plugins from the corresponding Gutenverse plugin need to be installed and activated."
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Please refresh this page after install & update the plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Do not show this again"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "OK"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+msgid "Activated"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Release Soon"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Download Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Version "
+msgstr ""
+
+#: lib/framework/assets/js/components.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Coming Soon"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Upgrade Plan Now"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Remove item"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Copied..."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Click to Copy Element Id"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Type to start searching..."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Use Dynamic Link"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Apply"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlink"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Please Update Your Theme"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "This warning means your theme isn't compatible with the latest Gutenverse version. If no update of the theme is available, please contact our support team."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "I Understand"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Do not show again"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Animation Entrance"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Duration"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Slow"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Fast"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Delay (ms)"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Input in miliseconds (ms). Later will be converted into second (s)"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Desktop"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Tablet"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Phone"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid ""
+"Drag a circle outside the box to remove it. \n"
+"You can't remove if there are only two left."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Type"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Linear"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Radial"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Angle"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Radial Position"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Center Center"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Center Left"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Center Right"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Top Center"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Top Left"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Top Right"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Bottom Center"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Bottom Left"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Bottom Right"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Image & Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Video"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Slide Show"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Fluid Background"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Type"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Use Featured Image"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Image"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Position"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Center center"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Custom"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "X Position"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Y Position"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Repeat"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "No repeat"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Repeat-x"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Repeat-y"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Cover"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Contain"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Width"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Blend Mode"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Multiply"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Screen"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Overlay"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Darken"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Lighten"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Color Dodge"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Color Burn"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hard Light"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Soft Light"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Difference"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Exclusion"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hue"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Saturation"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Luminosity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Fixed Background"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Video Link"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Start Time"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "in Seconds. For example 1:30 minutes will be 90"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "End Time"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Play Once"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Play On Mobile"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Fallback"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Image"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Infinite Loop"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Image Display Duration"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Transition"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "fade"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Slide Right"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Slide Left"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Slide Top"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Slide Down"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Transition Duration"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Image Display Duration value will be used if Transition Duration value is higher"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Size"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Repeat"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Repeat Y"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Repeat X"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Round"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Ken Burns Effect"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Direction"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "In"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Out"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Clear Border"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Solid"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Double"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Dotted"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Dashed"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Groove"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Border Radius"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Horizontal"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Vertical"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Spread"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Outset"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Inset"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "If value has not been set, it will follow the higher resolution's value"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Manage Variable Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Type"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Arrow"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Curve"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Curve Asymetrical"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Curve Asymetrical 2"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Curve Negative"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Curve Opacity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Mountain"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Mountain Opacity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Papertear"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Split"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Split Negative"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Tilt"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Tilt Gradient"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle Opacity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle Asymetrical"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle Asymetrical Opacity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle Negative"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle Negative Opacity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Waves"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Waves 2"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Waves Opacity"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Waves Opacity 2"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Waves Opacity 3"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Zig Zag"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Flip"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Invert"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Bring to Front"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Angle"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Color 2"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Angle 2"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Color 3"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Angle 3"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hexagonal"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Triangle 2"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Curve Asymetrical Negative"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Speed"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Loop"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Load On"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Page Load"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Viewport"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hover"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Offset"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hover Anchor"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Use Element ID or Class, or click Tree below to select. Leave empty to use body."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Pause on Leave"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Color {0}"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Color {0}"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Gradient Angle {0}"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Lorem Ipsum..."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Icon Library"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Search Icon"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Insert Icon"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Change Image"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Select Image"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Image Size"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Image Filter"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Brightness"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Contrast"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Pointer Type"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Click Add Item to Add List"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Add Item"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "No Option"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Search..."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Not a Gutenverse Element"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Select Element"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Text Shadow"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Add Global Fonts"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Manage Variable Font"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "100"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "200"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "300"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "400"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "500"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "600"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "700"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "800"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "900"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Generate"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "From Date"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "To Date"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Begin time more than end time, time range is not valid."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Shape"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Blob"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Circle"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Upload SVG"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Scale"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Space"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Pick Date"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Text Stroke"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Stroke Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Stroke Width"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Advance Animation"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Discover our advanced animation framework, designed to craft visually stunning and interactive elements that captivate and engage your audience."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Transform Element"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Transform your element with dynamic effects: rotate, move, scale, and adjust opacity seamlessly between normal and hovered states for a captivating user experience."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Input Logic"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Input Logic allows you to create a conditional display for certain input values."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Background Animated"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Elevate your website design with dynamic backgrounds that bring animations and movements to life, ensuring an engaging and memorable user experience."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Sticky"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Keep your elements firmly in place on your webpage as users seamlessly interact with the rest of the content."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Shape Divider Animated"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Transform your website design with custom-shaped elements that elegantly separate sections, complete with captivating animations for an irresistible layout."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Text Clip Overlay"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Create stuning website with text clip for both image background and CSS Gradient"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Cursor Effect"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Transform your mouse cursor with a diverse array of stylish effects to tailor and elevate your user experience."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Background Effects"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Enhance your element's background with captivating special effects like a dynamic, attention-grabbing wavy backdrop designed to captivate your users."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Lets you rotate, scale, skew, or translate an element"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Text Highlight"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Elevate your text element with customizable options like color, style, text decoration, and more to make it stand out."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Advance Tabs Settings And Style"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "You are currently using free version. Upgrade now to unlock full potential of your website design"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Form Multi Select Group Settings And Style"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Mouse Move Effect"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "An engaging 3D movement effect to your element that dynamically responds to your mouse movements."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Advance Button Settings And Style"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Fluid Background"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Add a stunning fluid background to your site. Upgrade to Pro to customize the fluid background to fit your website's style."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Block Show / Hide Condition"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Define condition if you want to set your block shown / hidden. This can be useful for example when you want to show the content only for your logged in users."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Dynamic Content"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Ensure key variables remain dynamic, including links to pages or posts, titles, and meta information."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Header Filter"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Add a filter button next to the Header Title of the Module, which users can use to filter the content displayed this Module. You can add filters based on Category, Tags, or Author."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Unlock Tooltip"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Enhance your elements with Tooltip: deliver clear, contextual guidance that appears effortlessly on hover or focus, creating a smoother and more intuitive user experience."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Z Index"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Background Transition"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Opacity Normal"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Opacity Hover"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Border Type"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Text Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Icon Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hover Text Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hover Icon Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hide on Desktop"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hide on Tablet"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Hide on Mobile"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Heading Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Link Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Link Hover Color"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Text Alignment"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Align Justify"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Align"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Location"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Spacing Horizontal"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Number Showed"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Show Dots"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Show Arrow"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Autoplay"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Autoplay Speed (ms)"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Block Element ID"
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "This is the block's ID. Click Generate to create a new ID."
+msgstr ""
+
+#: lib/framework/assets/js/core.js:2
+msgid "Advance"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "There is no Notifications"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "All plugins are compatible."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "Your plugin version is compatible with the current Gutenverse Core."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "Plugin compatibility data is missing. Please update the plugin to the latest version to ensure compatibility."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "Need Update"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "Updated"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "Notification Center"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+#: lib/framework/assets/js/notifications.js:2
+msgid "Version Compatibility"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WELCOME TO 👋"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Gutenverse Ecosystem"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Explore the unlimited possibilities of Gutenberg and Site Editing using various plugins of Gutenverse."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Join Our Community"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Thank You For Subscribing Our Newsletter"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "We will inform you about updates, new themes, new features, and other infos related to Gutenverse."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Start Building"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Sign up to our Newsletter"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Subscribe to our newsletter and be the first to get new features, latest update & new theme releases."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Subscribe"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "there is an error requesting subscription."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "please use a valid email address format."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "please input an email address."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enjoy using our plugin?"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Sharing your kind words about us and our widget means a lot to us."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "RATE US"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Technical Support"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Documentations"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "If you have any difficulties using our plugin, please check our documentation."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Check Now"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Upgrade "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " Gutenverse PRO "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " version to "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " unlock these premium blocks"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "All Blocks"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Disable All"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable All"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Element Disable"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "This"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " will appear on your element that you have used in the WordPress editor if you disable an element."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Responsive Breakpoints"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Tablet Breakpoint (px)"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Mobile Breakpoint (px)"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Editor Helper"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable Autoblock Recovery"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Recover block automatically."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable Missing Block Warning"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable warning popup when Gutenverse block is unsupported or disabled."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Editor Lazy Loading"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable Editor Lazy Loading"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable lazy loading in the editor to improve load times by only loading content as needed, especially when dealing with large amounts of content."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Extend Lazy Loader Viewport (%)"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Define the viewport extension distance to trigger detection when the block enters the visible area."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Block Placeholder Threshold (%)"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Set the threshold for the percentage of the block that must be visible before it is rendered."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Block Placeholder Height (px)"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Adjust the height of the block placeholder for lazy loading to optimize loading performance."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Use Reading Homepage Setting"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enable this option to use WordPress Reading Homepage Setting instead of themes front-page template.."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Inherit Layout"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Section's width inside post content will inherit your theme layout content size."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Download Complete Font Icon"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Default font icon that come with plugin already serve more than 98% of active browser, but you can download complete font icon to serve all active browser."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Icon was Downloaded"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Download Error"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Frontend Render Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please Refresh the Page After Saving Your Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Render Mechanism"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Pick Render Mechanism the System should implement when rendering frontend assets"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "File"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Inline"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Use manual delete cache clean process instead of automatic if you are using other cache plugin"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Manual Deletion"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Use Manual File Delete if you are using other cache plugin. "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Manual"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Cache Clean Up"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Loading..."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Delete Cache"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Old File Deletion Schedule"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Every 5 Minutes"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Every 2 days"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Weekly"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Monthly"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Yearly"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Remove Default Browser/WordPress Styles"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Remove Template Parts Margin"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "This will remove margin styling added to template parts from WordPress by default."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Editor"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Frontend"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Template"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Font Icon"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Performance"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Editor Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Frontend Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Template Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Theme Builder Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Font Icon Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Custom Font Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Form Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Global Block Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Gutenverse News Additional Features"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "View Counter Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Paywall Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Performance Settings"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " unlock these premium features"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please Install Gutenverse News Add's On Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "This setting may not affect your website entirely, but it will cause some of the features not working as expected."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Everything is Good"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "You will need to fix this setting to make plugin work as expected."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Theme Information"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Theme Name"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Themes currently installed & activated"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Theme Version"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Current theme version"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Parent Theme"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Current theme parent"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Parent Theme Version"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Current parent theme version"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WordPress Environtment"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Home URL"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The URL of your site's homepage"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Site URL"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The root URL of your site"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Login URL"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Your website login url"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WP Version"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The version of WordPress installed on your site"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WP Multisite"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Whether or not you have WordPress Multisite enabled"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WP Debug Mode"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Enabled"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Only enable WP DEBUG if you are on development server, once on production server, you will need to disable WP Debug"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " - We recommend setting memory to at least 256MB."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "See: Increasing memory allocated to PHP"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WP Memory Limit"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "See: Increasing the WordPress Memory Limit"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WP Language"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Default Language of your WordPress Installation"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Writeable Upload Directory"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please make sure your upload directory writeable. Some feature may not work as expected."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Number of Category"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The current number of post category on your site"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Number of Tag"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The current number of post tag on your site"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Server Environtment"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Server Info"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Information about the web server that is currently hosting your site"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP Version"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "We recommend a minimum PHP version of 7.4"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "The largest filesize that can be contained in one post"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP Time Limit"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "max_execution_time should be bigger than "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid ", otherwise import process may not finished as expected"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "max_input_vars should be bigger than  "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid ", otherwise you may not able to save setting on option panel"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself. If enabled on your server, Suhosin may need to be configured to increase its data submission limits."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "WP Remote Get"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please Enable WP Remote Get, some plugin feature may not work if remote get disabled."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP Image library installed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please install PHP image Magic library"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP GD library installed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please install PHP GD library"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP GD WebP supported"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "PHP fileinfo library installed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "CURL Installed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Installed Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Copy System Status"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "%s"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Version %s"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Downloaded"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Make Your "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " Workflow More Efficient "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " by Using Gutenverse PRO!"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Theme Activated"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Theme Installed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Install Failed"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Manage Plugin"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Activating"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Installing"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Templates"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Activate"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Install"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "DRAFT"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Active Theme"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "%s - Plugin Requirement"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Please install or update and activate these missing requirements plugin for this themes to work correctly. We recommend to backup your site before install/update plugin listed below."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "No result found!"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "It seems we can’t find any results based on your search."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Show All Themes"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Discover themes for Gutenverse"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Search Theme..."
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Explore "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " Premium Themes "
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid " For Your Multipurpose Business"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Setting Saved"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Saving Data Error"
+msgstr ""
+
+#: lib/framework/assets/js/dashboard.js:2
+msgid "Some of your plugin need more advance version of <strong>%s</strong>. Please update your <strong>%s</strong> Plugin."
+msgstr ""
+
+#: lib/framework/assets/js/notifications.js:2
+msgid "WordPress 5.9 required for Gutenverse."
+msgstr ""
+
+#: lib/framework/assets/js/notifications.js:2
+msgid "You are currently using lower version of WordPress, we recommend to update to WordPress 5.9 or higher. Or if you want to keep using lower version of WordPress, please install the latest version of Gutenberg"
+msgstr ""
+
+#: lib/framework/assets/js/notifications.js:2
+msgid "Gutenverse Upgrade Notice!"
+msgstr ""
+
+#: lib/framework/assets/js/notifications.js:2
+msgid "We have noticed that the versions of your Gutenverse plugins do not match. We recommend updating Gutenverse to ensure seamless compatibility and functionality of the plugins."
+msgstr ""
+
+#: lib/framework/assets/js/notifications.js:2
+msgid "Go to plugin page"
+msgstr ""
+
+#: block/form-builder/block.json
+msgctxt "block title"
+msgid "Form Builder"
+msgstr ""
+
+#: block/form-builder/block.json
+msgctxt "block description"
+msgid "Build a flexible form with many field choices."
+msgstr ""
+
+#: block/form-builder/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr ""
+
+#: block/form-builder/block.json
+#: block/form-input-checkbox/block.json
+#: block/form-input-date/block.json
+#: block/form-input-email/block.json
+#: block/form-input-gdpr/block.json
+#: block/form-input-multiselect/block.json
+#: block/form-input-number/block.json
+#: block/form-input-radio/block.json
+#: block/form-input-recaptcha/block.json
+#: block/form-input-select/block.json
+#: block/form-input-switch/block.json
+#: block/form-input-telp/block.json
+#: block/form-input-text/block.json
+#: block/form-input-textarea/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr ""
+
+#: block/form-builder/block.json
+msgctxt "block keyword"
+msgid "entry"
+msgstr ""
+
+#: block/form-builder/block.json
+msgctxt "block keyword"
+msgid "submit"
+msgstr ""
+
+#: block/form-builder/block.json
+#: block/form-input-checkbox/block.json
+#: block/form-input-date/block.json
+#: block/form-input-email/block.json
+#: block/form-input-gdpr/block.json
+#: block/form-input-multiselect/block.json
+#: block/form-input-number/block.json
+#: block/form-input-radio/block.json
+#: block/form-input-recaptcha/block.json
+#: block/form-input-select/block.json
+#: block/form-input-switch/block.json
+#: block/form-input-telp/block.json
+#: block/form-input-text/block.json
+#: block/form-input-textarea/block.json
+msgctxt "block keyword"
+msgid "input"
+msgstr ""
+
+#: block/form-builder/block.json
+#: lib/framework/block/column/block.json
+#: lib/framework/block/section/block.json
+#: lib/framework/block/wrapper/block.json
+msgctxt "block keyword"
+msgid "wrapper"
+msgstr ""
+
+#: block/form-input-checkbox/block.json
+msgctxt "block title"
+msgid "Checkbox"
+msgstr ""
+
+#: block/form-input-checkbox/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Checkbox"
+msgstr ""
+
+#: block/form-input-checkbox/block.json
+msgctxt "block keyword"
+msgid "checkbox"
+msgstr ""
+
+#: block/form-input-checkbox/block.json
+msgctxt "block keyword"
+msgid "checkmark"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block title"
+msgid "Date Input"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Date"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block keyword"
+msgid "date"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block keyword"
+msgid "years"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block keyword"
+msgid "months"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block keyword"
+msgid "days"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block keyword"
+msgid "hours"
+msgstr ""
+
+#: block/form-input-date/block.json
+msgctxt "block keyword"
+msgid "time"
+msgstr ""
+
+#: block/form-input-email/block.json
+msgctxt "block title"
+msgid "Email Input"
+msgstr ""
+
+#: block/form-input-email/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Email"
+msgstr ""
+
+#: block/form-input-email/block.json
+msgctxt "block keyword"
+msgid "email"
+msgstr ""
+
+#: block/form-input-email/block.json
+msgctxt "block keyword"
+msgid "message"
+msgstr ""
+
+#: block/form-input-gdpr/block.json
+msgctxt "block title"
+msgid "GDPR Input"
+msgstr ""
+
+#: block/form-input-gdpr/block.json
+msgctxt "block description"
+msgid "Gutenverse Input GDPR gdpr"
+msgstr ""
+
+#: block/form-input-gdpr/block.json
+msgctxt "block keyword"
+msgid "gdpr"
+msgstr ""
+
+#: block/form-input-multiselect/block.json
+msgctxt "block title"
+msgid "Multi Select"
+msgstr ""
+
+#: block/form-input-multiselect/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Multi Select"
+msgstr ""
+
+#: block/form-input-multiselect/block.json
+msgctxt "block keyword"
+msgid "multiple"
+msgstr ""
+
+#: block/form-input-multiselect/block.json
+msgctxt "block keyword"
+msgid "selections"
+msgstr ""
+
+#: block/form-input-multiselect/block.json
+#: block/form-input-select/block.json
+msgctxt "block keyword"
+msgid "options"
+msgstr ""
+
+#: block/form-input-number/block.json
+msgctxt "block title"
+msgid "Number Input"
+msgstr ""
+
+#: block/form-input-number/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Number"
+msgstr ""
+
+#: block/form-input-number/block.json
+msgctxt "block keyword"
+msgid "numbers"
+msgstr ""
+
+#: block/form-input-radio/block.json
+msgctxt "block title"
+msgid "Radio"
+msgstr ""
+
+#: block/form-input-radio/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Radio"
+msgstr ""
+
+#: block/form-input-radio/block.json
+msgctxt "block keyword"
+msgid "radio"
+msgstr ""
+
+#: block/form-input-radio/block.json
+msgctxt "block keyword"
+msgid "dot"
+msgstr ""
+
+#: block/form-input-recaptcha/block.json
+msgctxt "block title"
+msgid "reCAPTCHA"
+msgstr ""
+
+#: block/form-input-recaptcha/block.json
+msgctxt "block description"
+msgid "Gutenverse Input reCAPTCHA"
+msgstr ""
+
+#: block/form-input-recaptcha/block.json
+msgctxt "block keyword"
+msgid "verification"
+msgstr ""
+
+#: block/form-input-recaptcha/block.json
+msgctxt "block keyword"
+msgid "recaptcha"
+msgstr ""
+
+#: block/form-input-select/block.json
+msgctxt "block title"
+msgid "Select"
+msgstr ""
+
+#: block/form-input-select/block.json
+msgctxt "block description"
+msgid "Gutenverse Select"
+msgstr ""
+
+#: block/form-input-select/block.json
+msgctxt "block keyword"
+msgid "selection"
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block title"
+msgid "Submit Button"
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block description"
+msgid "Create an interactive and beautiful action button."
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block keyword"
+msgid "url"
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block keyword"
+msgid "action"
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block keyword"
+msgid "confirm"
+msgstr ""
+
+#: block/form-input-submit/block.json
+msgctxt "block keyword"
+msgid "send"
+msgstr ""
+
+#: block/form-input-switch/block.json
+msgctxt "block title"
+msgid "Switch"
+msgstr ""
+
+#: block/form-input-switch/block.json
+msgctxt "block description"
+msgid "Gutenverse Switch"
+msgstr ""
+
+#: block/form-input-switch/block.json
+msgctxt "block keyword"
+msgid "switch"
+msgstr ""
+
+#: block/form-input-switch/block.json
+msgctxt "block keyword"
+msgid "toggle"
+msgstr ""
+
+#: block/form-input-telp/block.json
+msgctxt "block title"
+msgid "Phone Input"
+msgstr ""
+
+#: block/form-input-telp/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Phone"
+msgstr ""
+
+#: block/form-input-telp/block.json
+msgctxt "block keyword"
+msgid "telephone"
+msgstr ""
+
+#: block/form-input-telp/block.json
+msgctxt "block keyword"
+msgid "number"
+msgstr ""
+
+#: block/form-input-text/block.json
+msgctxt "block title"
+msgid "Text Input"
+msgstr ""
+
+#: block/form-input-text/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Text"
+msgstr ""
+
+#: block/form-input-text/block.json
+msgctxt "block keyword"
+msgid "texts"
+msgstr ""
+
+#: block/form-input-textarea/block.json
+msgctxt "block title"
+msgid "Textarea"
+msgstr ""
+
+#: block/form-input-textarea/block.json
+msgctxt "block description"
+msgid "Gutenverse Input Textarea"
+msgstr ""
+
+#: block/form-input-textarea/block.json
+msgctxt "block keyword"
+msgid "textarea"
+msgstr ""
+
+#: lib/framework/block/column/block.json
+msgctxt "block title"
+msgid "Column"
+msgstr ""
+
+#: lib/framework/block/column/block.json
+msgctxt "block description"
+msgid "Draggable column, to make your experience flawless when resize it."
+msgstr ""
+
+#: lib/framework/block/column/block.json
+#: lib/framework/block/section/block.json
+#: lib/framework/block/wrapper/block.json
+msgctxt "block keyword"
+msgid "container"
+msgstr ""
+
+#: lib/framework/block/column/block.json
+msgctxt "block keyword"
+msgid "column"
+msgstr ""
+
+#: lib/framework/block/column/block.json
+#: lib/framework/block/section/block.json
+#: lib/framework/block/wrapper/block.json
+msgctxt "block keyword"
+msgid "structure"
+msgstr ""
+
+#: lib/framework/block/section/block.json
+msgctxt "block title"
+msgid "Section"
+msgstr ""
+
+#: lib/framework/block/section/block.json
+msgctxt "block description"
+msgid "Add a section to wrap several blocks or column."
+msgstr ""
+
+#: lib/framework/block/section/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr ""
+
+#: lib/framework/block/wrapper/block.json
+msgctxt "block title"
+msgid "Flexible Wrapper"
+msgstr ""
+
+#: lib/framework/block/wrapper/block.json
+msgctxt "block description"
+msgid "Flexible Wrapper / Container to contain your block"
+msgstr ""
