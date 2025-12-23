@@ -3327,6 +3327,8 @@ exports["default"] = void 0;
 const eventsConfig = {
   triggers: {
     click: 'Click',
+    rightClick: 'Right Click',
+    doubleClick: 'Double Click',
     accordionClick: 'Accordion Click',
     toggleClick: 'Toggle Click',
     dropdownClick: 'Click Dropdown',
@@ -3348,7 +3350,10 @@ const eventsConfig = {
       cloudKitLibrary: 'Cloud Kit Library'
     },
     variables: 'Variables Panel',
-    admin: 'WP admin'
+    variablesManager: 'Variables Manager',
+    admin: 'WP admin',
+    structurePanel: 'Structure Panel',
+    canvas: 'Canvas'
   },
   secondaryLocations: {
     layout: 'Layout Section',
@@ -3421,7 +3426,9 @@ const eventsConfig = {
     admin: {
       pluginToolsTab: 'plugin_tools_tab',
       pluginWebsiteTemplatesTab: 'plugin_website_templates_tab'
-    }
+    },
+    componentsTab: 'Components Tab',
+    canvasElement: 'Canvas Element'
   },
   elements: {
     accordionSection: 'Accordion section',
@@ -3485,7 +3492,37 @@ const eventsConfig = {
       open: 'open_variables_popover',
       add: 'add_new_variable',
       connect: 'connect_variable',
-      save: 'save_new_variable'
+      save: 'save_new_variable',
+      openManager: 'open_variables_manager',
+      saveChanges: 'save_variables_changes',
+      delete: 'delete_variable'
+    },
+    components: {
+      createClicked: 'component_create_clicked',
+      createCancelled: 'component_creation_cancelled',
+      created: 'component_created',
+      instanceAdded: 'component_instance_added',
+      edited: 'component_edited'
+    },
+    global_classes: {
+      classApplied: 'class_applied',
+      classRemoved: 'class_removed',
+      classManagerFilterCleared: 'class_manager_filter_cleared',
+      classDeleted: 'class_deleted',
+      classPublishConflict: 'class_publish_conflict',
+      classRenamed: 'class_renamed',
+      classCreated: 'class_created',
+      classManagerSearched: 'class_manager_searched',
+      classManagerFiltersOpened: 'class_manager_filters_opened',
+      classManagerOpened: 'class_manager_opened',
+      classManagerReorder: 'class_manager_reorder',
+      classManagerFilterUsed: 'class_manager_filter_used',
+      classUsageLocate: 'class_usage_locate',
+      classUsageHovered: 'class_usage_hovered',
+      classStyled: 'class_styled',
+      classStateClicked: 'class_state_clicked',
+      classUsageClicked: 'class_usage_clicked',
+      classDuplicate: 'class_duplicate'
     }
   }
 };
@@ -4360,7 +4397,7 @@ module.exports = function (namespace, method) {
 "use strict";
 
 // `GetIteratorDirect(obj)` abstract operation
-// https://tc39.es/proposal-iterator-helpers/#sec-getiteratordirect
+// https://tc39.es/ecma262/#sec-getiteratordirect
 module.exports = function (obj) {
   return {
     iterator: obj,
@@ -5010,7 +5047,7 @@ var getMethod = __webpack_require__(/*! ../internals/get-method */ "../node_modu
 var IteratorPrototype = (__webpack_require__(/*! ../internals/iterators-core */ "../node_modules/core-js/internals/iterators-core.js").IteratorPrototype);
 var createIterResultObject = __webpack_require__(/*! ../internals/create-iter-result-object */ "../node_modules/core-js/internals/create-iter-result-object.js");
 var iteratorClose = __webpack_require__(/*! ../internals/iterator-close */ "../node_modules/core-js/internals/iterator-close.js");
-var iteratorCloseAll = __webpack_require__(/*! ./iterator-close-all */ "../node_modules/core-js/internals/iterator-close-all.js");
+var iteratorCloseAll = __webpack_require__(/*! ../internals/iterator-close-all */ "../node_modules/core-js/internals/iterator-close-all.js");
 
 var TO_STRING_TAG = wellKnownSymbol('toStringTag');
 var ITERATOR_HELPER = 'IteratorHelper';
@@ -5817,10 +5854,10 @@ var SHARED = '__core-js_shared__';
 var store = module.exports = globalThis[SHARED] || defineGlobalProperty(SHARED, {});
 
 (store.versions || (store.versions = [])).push({
-  version: '3.43.0',
+  version: '3.46.0',
   mode: IS_PURE ? 'pure' : 'global',
-  copyright: '© 2014-2025 Denis Pushkarev (zloirock.ru)',
-  license: 'https://github.com/zloirock/core-js/blob/v3.43.0/LICENSE',
+  copyright: '© 2014-2025 Denis Pushkarev (zloirock.ru), 2025 CoreJS Company (core-js.io)',
+  license: 'https://github.com/zloirock/core-js/blob/v3.46.0/LICENSE',
   source: 'https://github.com/zloirock/core-js'
 });
 

@@ -102,7 +102,7 @@ __( 'will keep their current values, but the variable itself will be removed.', 
 __( 'Not now', 'elementor' );
 __( 'Delete', 'elementor' );
 __( 'Font family', 'elementor' );
-__( 'Unlink variable', 'elementor' );
 __( 'Missing variable', 'elementor' );
 __( 'changed', 'elementor' );
 __( 'deleted', 'elementor' );
+__( 'Unlink variable', 'elementor' );

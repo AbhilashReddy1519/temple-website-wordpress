@@ -192,6 +192,1503 @@ var markNoticeViewed = exports.markNoticeViewed = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "../modules/element-manager/assets/js/app-editor-one/App.js":
+/*!******************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/App.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "../node_modules/@babel/runtime/helpers/typeof.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.App = void 0;
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ "../node_modules/@babel/runtime/regenerator/index.js"));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _hooks = __webpack_require__(/*! ./hooks */ "../modules/element-manager/assets/js/app-editor-one/hooks/index.js");
+var _components = __webpack_require__(/*! ./components */ "../modules/element-manager/assets/js/app-editor-one/components/index.js");
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
+var App = exports.App = function App() {
+  var _useState = (0, _react.useState)(false),
+    _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+    isConfirmDialogOpen = _useState2[0],
+    setIsConfirmDialogOpen = _useState2[1];
+  var _useElementManager = (0, _hooks.useElementManager)(),
+    isLoading = _useElementManager.isLoading,
+    widgets = _useElementManager.widgets,
+    promotionWidgets = _useElementManager.promotionWidgets,
+    plugins = _useElementManager.plugins,
+    roles = _useElementManager.roles,
+    widgetsDisabled = _useElementManager.widgetsDisabled,
+    widgetsRoleRestrictions = _useElementManager.widgetsRoleRestrictions,
+    setWidgetsRoleRestrictions = _useElementManager.setWidgetsRoleRestrictions,
+    promotionData = _useElementManager.promotionData,
+    noticeData = _useElementManager.noticeData,
+    usageWidgets = _useElementManager.usageWidgets,
+    changeProgress = _useElementManager.changeProgress,
+    isSnackbarOpen = _useElementManager.isSnackbarOpen,
+    setIsSnackbarOpen = _useElementManager.setIsSnackbarOpen,
+    getWidgetUsage = _useElementManager.getWidgetUsage,
+    scanUsageElements = _useElementManager.scanUsageElements,
+    saveChanges = _useElementManager.saveChanges,
+    deactivateAllUnusedWidgets = _useElementManager.deactivateAllUnusedWidgets,
+    enableAllWidgets = _useElementManager.enableAllWidgets,
+    toggleWidget = _useElementManager.toggleWidget,
+    dismissNotice = _useElementManager.dismissNotice;
+  var _useWidgetFilters = (0, _hooks.useWidgetFilters)(widgets, widgetsDisabled, getWidgetUsage),
+    searchKeyword = _useWidgetFilters.searchKeyword,
+    setSearchKeyword = _useWidgetFilters.setSearchKeyword,
+    filterByPlugin = _useWidgetFilters.filterByPlugin,
+    setFilterByPlugin = _useWidgetFilters.setFilterByPlugin,
+    filterByStatus = _useWidgetFilters.filterByStatus,
+    setFilterByStatus = _useWidgetFilters.setFilterByStatus,
+    sortedAndFilteredWidgets = _useWidgetFilters.sortedAndFilteredWidgets,
+    getSortingIndicatorClasses = _useWidgetFilters.getSortingIndicatorClasses,
+    onSortingClicked = _useWidgetFilters.onSortingClicked,
+    setSortByUsage = _useWidgetFilters.setSortByUsage;
+  var handleScanUsage = (0, _react.useCallback)(/*#__PURE__*/(0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
+    return _regenerator.default.wrap(function (_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 1;
+          return scanUsageElements();
+        case 1:
+          setSortByUsage();
+        case 2:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  })), [scanUsageElements, setSortByUsage]);
+  var handleSaveClick = (0, _react.useCallback)(/*#__PURE__*/(0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee2() {
+    return _regenerator.default.wrap(function (_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          setIsConfirmDialogOpen(false);
+          _context2.next = 1;
+          return saveChanges();
+        case 1:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2);
+  })), [saveChanges]);
+  if (isLoading) {
+    return /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+      justifyContent: "center",
+      sx: {
+        margin: 12
+      }
+    }, /*#__PURE__*/_react.default.createElement(_ui.CircularProgress, {
+      size: 80
+    }));
+  }
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+    variant: "body2",
+    color: "text.secondary",
+    sx: {
+      marginBlockEnd: 2.5,
+      maxWidth: 800
+    }
+  }, (0, _i18n.__)('Here\'s where you can fine-tune Elementor to your workflow. Disable elements you don\'t use for a cleaner interface, more focused creative experience, and improved performance.', 'elementor'), ' ', /*#__PURE__*/_react.default.createElement(_ui.Link, {
+    href: "https://go.elementor.com/wp-dash-element-manager/",
+    rel: "noreferrer",
+    target: "_blank",
+    color: "info.light"
+  }, (0, _i18n.__)('Learn More', 'elementor'))), noticeData && !noticeData.is_viewed && /*#__PURE__*/_react.default.createElement(_components.NoticeAlert, {
+    onDismiss: dismissNotice
+  }), /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_components.SearchFilters, {
+    searchKeyword: searchKeyword,
+    onSearchChange: setSearchKeyword,
+    filterByPlugin: filterByPlugin,
+    onPluginFilterChange: setFilterByPlugin,
+    filterByStatus: filterByStatus,
+    onStatusFilterChange: setFilterByStatus,
+    plugins: plugins,
+    usageIsLoading: usageWidgets.isLoading,
+    usageData: usageWidgets.data,
+    widgetsDisabledCount: widgetsDisabled.length,
+    onScanUsage: handleScanUsage,
+    onDeactivateUnused: deactivateAllUnusedWidgets,
+    onEnableAll: enableAllWidgets,
+    onSaveChanges: function onSaveChanges() {
+      return setIsConfirmDialogOpen(true);
+    },
+    isSaving: changeProgress.isSaving,
+    hasUnsavedChanges: changeProgress.isUnsavedChanges
+  }), /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_components.WidgetsTable, {
+    widgets: sortedAndFilteredWidgets,
+    widgetsDisabled: widgetsDisabled,
+    widgetsRoleRestrictions: widgetsRoleRestrictions,
+    setWidgetsRoleRestrictions: setWidgetsRoleRestrictions,
+    roles: roles,
+    promotionWidgets: promotionWidgets,
+    promotionData: promotionData,
+    usageWidgets: usageWidgets,
+    getWidgetUsage: getWidgetUsage,
+    onScanUsage: handleScanUsage,
+    onToggleWidget: toggleWidget,
+    getSortingIndicatorClasses: getSortingIndicatorClasses,
+    onSortingClicked: onSortingClicked
+  })), /*#__PURE__*/_react.default.createElement(_components.PromotionWidgetsTable, {
+    widgets: promotionWidgets,
+    promotionData: promotionData
+  })), /*#__PURE__*/_react.default.createElement(_components.ConfirmDialog, {
+    isOpen: isConfirmDialogOpen,
+    onClose: function onClose() {
+      return setIsConfirmDialogOpen(false);
+    },
+    onConfirm: handleSaveClick
+  }), /*#__PURE__*/_react.default.createElement(_ui.Snackbar, {
+    open: isSnackbarOpen,
+    autoHideDuration: 6000,
+    onClose: function onClose() {
+      return setIsSnackbarOpen(false);
+    },
+    message: (0, _i18n.__)('We saved your changes.', 'elementor'),
+    anchorOrigin: {
+      vertical: 'bottom',
+      horizontal: 'center'
+    }
+  }));
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/ConfirmDialog.js":
+/*!***************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/ConfirmDialog.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.ConfirmDialog = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+var ConfirmDialog = exports.ConfirmDialog = function ConfirmDialog(_ref) {
+  var isOpen = _ref.isOpen,
+    onClose = _ref.onClose,
+    onConfirm = _ref.onConfirm;
+  return /*#__PURE__*/_react.default.createElement(_ui.Dialog, {
+    open: isOpen,
+    onClose: onClose,
+    maxWidth: "sm"
+  }, /*#__PURE__*/_react.default.createElement(_ui.DialogTitle, null, (0, _i18n.__)('Sure you want to save these changes?', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.DialogContent, null, /*#__PURE__*/_react.default.createElement(_ui.DialogContentText, null, (0, _i18n.__)('Turning widgets off will hide them from the editor panel, and can potentially affect your layout or front-end.', 'elementor'), /*#__PURE__*/_react.default.createElement(_ui.Box, {
+    component: "span",
+    sx: {
+      display: 'block',
+      mt: 2.5
+    }
+  }, (0, _i18n.__)('If you\'re adding widgets back in, enjoy them!', 'elementor')))), /*#__PURE__*/_react.default.createElement(_ui.DialogActions, null, /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    gap: 2,
+    justifyContent: "flex-end"
+  }, /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "outlined",
+    color: "secondary",
+    onClick: onClose,
+    className: "e-id-elementor-element-manager-modal-button-cancel"
+  }, (0, _i18n.__)('Cancel', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "contained",
+    onClick: onConfirm,
+    className: "e-id-elementor-element-manager-modal-button-save"
+  }, (0, _i18n.__)('Save', 'elementor')))));
+};
+ConfirmDialog.propTypes = {
+  isOpen: _propTypes.default.bool.isRequired,
+  onClose: _propTypes.default.func.isRequired,
+  onConfirm: _propTypes.default.func.isRequired
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/NoticeAlert.js":
+/*!*************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/NoticeAlert.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.NoticeAlert = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+var NoticeAlert = exports.NoticeAlert = function NoticeAlert(_ref) {
+  var onDismiss = _ref.onDismiss;
+  return /*#__PURE__*/_react.default.createElement(_ui.Box, {
+    sx: {
+      mb: 2
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.Alert, {
+    severity: "warning",
+    onClose: onDismiss
+  }, /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+    component: "strong",
+    variant: "body2",
+    sx: {
+      fontWeight: 700
+    }
+  }, (0, _i18n.__)('Before you continue:', 'elementor')), ' ', (0, _i18n.__)('Deactivating widgets here will remove them from both the Elementor Editor and your website, which can cause changes to your overall layout, design and what visitors see.', 'elementor')));
+};
+NoticeAlert.propTypes = {
+  onDismiss: _propTypes.default.func.isRequired
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/PromotionWidgetsTable.js":
+/*!***********************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/PromotionWidgetsTable.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.PromotionWidgetsTable = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _icons = __webpack_require__(/*! @elementor/icons */ "@elementor/icons");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+var _upgradeButton = __webpack_require__(/*! ../../upgrade-button */ "../modules/element-manager/assets/js/upgrade-button.js");
+var _RolePermissions = __webpack_require__(/*! ./RolePermissions */ "../modules/element-manager/assets/js/app-editor-one/components/RolePermissions.js");
+var PromotionWidgetsTable = exports.PromotionWidgetsTable = function PromotionWidgetsTable(_ref) {
+  var widgets = _ref.widgets,
+    promotionData = _ref.promotionData;
+  var elementManager = promotionData.element_manager;
+  if (!widgets.length) {
+    return null;
+  }
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_ui.Box, {
+    sx: {
+      mt: 5,
+      mb: 2.5
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
+  }, /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+    variant: "h6",
+    component: "h3"
+  }, (0, _i18n.__)('Elementor Pro Elements', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+    variant: "body2",
+    component: "p"
+  }, (0, _i18n.__)('Unleash the full power of Elementor\'s features and web creation tools.', 'elementor'))), /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_upgradeButton.UpgradeButton, {
+    href: elementManager.url,
+    text: elementManager.text,
+    className: "e-id-elementor-element-manager-button-upgrade-pro-elements"
+  })))), /*#__PURE__*/_react.default.createElement(_ui.TableContainer, {
+    component: _ui.Paper,
+    variant: "outlined"
+  }, /*#__PURE__*/_react.default.createElement(_ui.Table, {
+    size: "small"
+  }, /*#__PURE__*/_react.default.createElement(_ui.TableHead, null, /*#__PURE__*/_react.default.createElement(_ui.TableRow, null, /*#__PURE__*/_react.default.createElement(_ui.TableCell, {
+    sx: function sx(theme) {
+      return {
+        width: theme.spacing(25)
+      };
+    }
+  }, (0, _i18n.__)('Element', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, {
+    sx: function sx(theme) {
+      return {
+        width: theme.spacing(10)
+      };
+    }
+  }, (0, _i18n.__)('Status', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, (0, _i18n.__)('Usage', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, (0, _i18n.__)('Plugin', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    gap: 1
+  }, /*#__PURE__*/_react.default.createElement(_ui.Box, null, (0, _i18n.__)('Permission', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_ui.Tooltip, {
+    placement: "top",
+    title: (0, _i18n.__)('Choose which role will have access to a specific widget.', 'elementor')
+  }, /*#__PURE__*/_react.default.createElement(_ui.IconButton, {
+    size: "small"
+  }, /*#__PURE__*/_react.default.createElement(_icons.HelpIcon, {
+    fontSize: "small"
+  })))))))), /*#__PURE__*/_react.default.createElement(_ui.TableBody, null, widgets.map(function (widget) {
+    return /*#__PURE__*/_react.default.createElement(_ui.TableRow, {
+      key: widget.name,
+      hover: true
+    }, /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_ui.Box, {
+      sx: {
+        display: 'flex',
+        alignItems: 'center'
+      }
+    }, /*#__PURE__*/_react.default.createElement("i", {
+      style: {
+        marginInlineEnd: 8
+      },
+      className: widget.icon
+    }), widget.title)), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_ui.Switch, {
+      checked: false,
+      disabled: true,
+      size: "small",
+      className: "e-id-elementor-element-manager-toggle-".concat(widget.name)
+    })), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, (0, _i18n.__)('Elementor Pro', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_RolePermissions.EditButtonDisabled, {
+      widgetName: widget.name
+    })));
+  })))));
+};
+PromotionWidgetsTable.propTypes = {
+  widgets: _propTypes.default.arrayOf(_propTypes.default.shape({
+    name: _propTypes.default.string.isRequired,
+    title: _propTypes.default.string.isRequired,
+    icon: _propTypes.default.string
+  })).isRequired,
+  promotionData: _propTypes.default.shape({
+    element_manager: _propTypes.default.shape({
+      url: _propTypes.default.string,
+      text: _propTypes.default.string
+    })
+  }).isRequired
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/RolePermissions.js":
+/*!*****************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/RolePermissions.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "../node_modules/@babel/runtime/helpers/typeof.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.RolePermissions = exports.EditButtonDisabled = void 0;
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
+var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "../node_modules/@babel/runtime/helpers/toConsumableArray.js"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+var toggleRoleRestrictions = function toggleRoleRestrictions(widgetName, roleId, widgetsRoleRestrictions, setWidgetsRoleRestrictions) {
+  var widgetRoleRestrictions = (0, _toConsumableArray2.default)(widgetsRoleRestrictions[widgetName] || []);
+  if (widgetRoleRestrictions.includes(roleId)) {
+    widgetRoleRestrictions.splice(widgetRoleRestrictions.indexOf(roleId), 1);
+  } else {
+    widgetRoleRestrictions.push(roleId);
+  }
+  setWidgetsRoleRestrictions(_objectSpread(_objectSpread({}, widgetsRoleRestrictions), {}, (0, _defineProperty2.default)({}, widgetName, widgetRoleRestrictions)));
+};
+var RolesList = function RolesList(_ref) {
+  var roles = _ref.roles,
+    widgetRoleRestrictions = _ref.widgetRoleRestrictions;
+  var rolesEnabled = roles.filter(function (role) {
+    return !widgetRoleRestrictions.includes(role.id);
+  });
+  if (!rolesEnabled.length) {
+    return /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+      component: "span",
+      variant: "body2",
+      color: "text.primary"
+    }, "(", (0, _i18n.__)('Admin', 'elementor'), ")");
+  }
+  if (rolesEnabled.length === roles.length) {
+    return /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+      component: "span",
+      variant: "body2",
+      color: "text.primary"
+    }, "(", (0, _i18n.__)('All Roles', 'elementor'), ")");
+  }
+  return /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+    component: "span",
+    variant: "body2",
+    color: "text.primary"
+  }, "(", rolesEnabled.map(function (role) {
+    return role.name;
+  }).join(', '), ")");
+};
+RolesList.propTypes = {
+  roles: _propTypes.default.arrayOf(_propTypes.default.shape({
+    id: _propTypes.default.string.isRequired,
+    name: _propTypes.default.string.isRequired
+  })).isRequired,
+  widgetRoleRestrictions: _propTypes.default.arrayOf(_propTypes.default.string).isRequired
+};
+var RolePermissions = exports.RolePermissions = function RolePermissions(_ref2) {
+  var roles = _ref2.roles,
+    widgetName = _ref2.widgetName,
+    widgetsRoleRestrictions = _ref2.widgetsRoleRestrictions,
+    setWidgetsRoleRestrictions = _ref2.setWidgetsRoleRestrictions;
+  var _useState = (0, _react.useState)(null),
+    _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+    anchorEl = _useState2[0],
+    setAnchorEl = _useState2[1];
+  var isOpen = Boolean(anchorEl);
+  var widgetRoleRestrictions = widgetsRoleRestrictions[widgetName] || [];
+  var handleClick = (0, _react.useCallback)(function (event) {
+    setAnchorEl(event.currentTarget);
+  }, []);
+  var handleClose = (0, _react.useCallback)(function () {
+    setAnchorEl(null);
+  }, []);
+  var isAllChecked = roles.every(function (role) {
+    return !widgetRoleRestrictions.includes(role.id);
+  });
+  var isIndeterminate = !isAllChecked && roles.some(function (role) {
+    return !widgetRoleRestrictions.includes(role.id);
+  });
+  var handleAllChange = (0, _react.useCallback)(function (event) {
+    if (event.target.checked) {
+      setWidgetsRoleRestrictions(_objectSpread(_objectSpread({}, widgetsRoleRestrictions), {}, (0, _defineProperty2.default)({}, widgetName, [])));
+    } else {
+      setWidgetsRoleRestrictions(_objectSpread(_objectSpread({}, widgetsRoleRestrictions), {}, (0, _defineProperty2.default)({}, widgetName, roles.map(function (role) {
+        return role.id;
+      }))));
+    }
+  }, [widgetName, widgetsRoleRestrictions, setWidgetsRoleRestrictions, roles]);
+  return /*#__PURE__*/_react.default.createElement(_ui.Box, {
+    sx: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 0.5
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "text",
+    color: "secondary",
+    size: "small",
+    onClick: handleClick,
+    "aria-expanded": isOpen,
+    "aria-haspopup": "true",
+    className: "e-id-elementor-element-manager-button-edit-permissions-".concat(widgetName)
+  }, (0, _i18n.__)('Edit', 'elementor')), /*#__PURE__*/_react.default.createElement(RolesList, {
+    roles: roles,
+    widgetRoleRestrictions: widgetRoleRestrictions
+  }), /*#__PURE__*/_react.default.createElement(_ui.Menu, {
+    anchorEl: anchorEl,
+    open: isOpen,
+    onClose: handleClose,
+    anchorOrigin: {
+      vertical: 'bottom',
+      horizontal: 'left'
+    },
+    transformOrigin: {
+      vertical: 'top',
+      horizontal: 'left'
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.MenuItem, {
+    sx: {
+      py: 0.5
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.FormControlLabel, {
+    control: /*#__PURE__*/_react.default.createElement(_ui.Checkbox, {
+      checked: isAllChecked,
+      indeterminate: isIndeterminate,
+      onChange: handleAllChange,
+      size: "small",
+      color: "secondary"
+    }),
+    label: (0, _i18n.__)('All', 'elementor')
+  })), roles.map(function (role) {
+    return /*#__PURE__*/_react.default.createElement(_ui.MenuItem, {
+      key: role.id,
+      sx: {
+        py: 0.5
+      }
+    }, /*#__PURE__*/_react.default.createElement(_ui.FormControlLabel, {
+      control: /*#__PURE__*/_react.default.createElement(_ui.Checkbox, {
+        color: "secondary",
+        checked: !widgetRoleRestrictions.includes(role.id),
+        onChange: function onChange() {
+          toggleRoleRestrictions(widgetName, role.id, widgetsRoleRestrictions, setWidgetsRoleRestrictions);
+        },
+        size: "small"
+      }),
+      label: role.name
+    }));
+  })));
+};
+RolePermissions.propTypes = {
+  roles: _propTypes.default.arrayOf(_propTypes.default.shape({
+    id: _propTypes.default.string.isRequired,
+    name: _propTypes.default.string.isRequired
+  })).isRequired,
+  widgetName: _propTypes.default.string.isRequired,
+  widgetsRoleRestrictions: _propTypes.default.oneOfType([_propTypes.default.object, _propTypes.default.array]).isRequired,
+  setWidgetsRoleRestrictions: _propTypes.default.func.isRequired
+};
+var EditButtonDisabled = exports.EditButtonDisabled = function EditButtonDisabled(_ref3) {
+  var _ref3$widgetName = _ref3.widgetName,
+    widgetName = _ref3$widgetName === void 0 ? 'unknown' : _ref3$widgetName;
+  return /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "text",
+    color: "secondary",
+    size: "small",
+    disabled: true,
+    className: "e-id-elementor-element-manager-button-edit-permissions-".concat(widgetName)
+  }, (0, _i18n.__)('Edit', 'elementor'));
+};
+EditButtonDisabled.propTypes = {
+  widgetName: _propTypes.default.string
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/SearchFilters.js":
+/*!***************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/SearchFilters.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.SearchFilters = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+var SearchFilters = exports.SearchFilters = function SearchFilters(_ref) {
+  var searchKeyword = _ref.searchKeyword,
+    onSearchChange = _ref.onSearchChange,
+    filterByPlugin = _ref.filterByPlugin,
+    onPluginFilterChange = _ref.onPluginFilterChange,
+    filterByStatus = _ref.filterByStatus,
+    onStatusFilterChange = _ref.onStatusFilterChange,
+    plugins = _ref.plugins,
+    usageIsLoading = _ref.usageIsLoading,
+    usageData = _ref.usageData,
+    widgetsDisabledCount = _ref.widgetsDisabledCount,
+    onScanUsage = _ref.onScanUsage,
+    onDeactivateUnused = _ref.onDeactivateUnused,
+    onEnableAll = _ref.onEnableAll,
+    onSaveChanges = _ref.onSaveChanges,
+    isSaving = _ref.isSaving,
+    hasUnsavedChanges = _ref.hasUnsavedChanges;
+  return /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    sx: function sx(theme) {
+      return {
+        position: 'sticky',
+        top: theme.spacing(4),
+        backgroundColor: 'var(--e-one-palette-background-default)',
+        zIndex: 10,
+        paddingBlock: 2.5,
+        paddingInline: 2,
+        boxShadow: 'rgba(0, 0, 0, 0.15) 0 5px 10px 0'
+      };
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    alignItems: "center",
+    gap: 2
+  }, /*#__PURE__*/_react.default.createElement(_ui.TextField, {
+    color: "secondary",
+    value: searchKeyword,
+    size: "small",
+    placeholder: (0, _i18n.__)('Search', 'elementor'),
+    onChange: function onChange(e) {
+      return onSearchChange(e.target.value);
+    },
+    sx: function sx(theme) {
+      return {
+        minWidth: theme.spacing(14)
+      };
+    }
+  }), /*#__PURE__*/_react.default.createElement(_ui.FormControl, {
+    fullWidth: true,
+    size: "small",
+    sx: function sx(theme) {
+      return {
+        width: theme.spacing(16)
+      };
+    },
+    color: "secondary"
+  }, /*#__PURE__*/_react.default.createElement(_ui.Select, {
+    placeholder: (0, _i18n.__)('Plugin', 'elementor'),
+    value: filterByPlugin,
+    onChange: function onChange(event) {
+      return onPluginFilterChange(event.target.value);
+    },
+    name: "elementor-element-manager-select-filter-by-plugin"
+  }, plugins.map(function (plugin) {
+    return /*#__PURE__*/_react.default.createElement(_ui.MenuItem, {
+      key: plugin.value,
+      value: plugin.value
+    }, plugin.label);
+  }))), /*#__PURE__*/_react.default.createElement(_ui.FormControl, {
+    fullWidth: true,
+    size: "small",
+    sx: function sx(theme) {
+      return {
+        width: theme.spacing(16)
+      };
+    },
+    color: "secondary"
+  }, /*#__PURE__*/_react.default.createElement(_ui.Select, {
+    value: filterByStatus,
+    onChange: function onChange(event) {
+      return onStatusFilterChange(event.target.value);
+    },
+    name: "elementor-element-manager-select-filter-by-status",
+    placeholder: (0, _i18n.__)('Status', 'elementor')
+  }, /*#__PURE__*/_react.default.createElement(_ui.MenuItem, {
+    value: "all"
+  }, (0, _i18n.__)('All Statuses', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.MenuItem, {
+    value: "active"
+  }, (0, _i18n.__)('Active', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.MenuItem, {
+    value: "inactive"
+  }, (0, _i18n.__)('Inactive', 'elementor')))), /*#__PURE__*/_react.default.createElement(_ui.Divider, {
+    orientation: "vertical",
+    flexItem: true,
+    sx: {
+      height: 30,
+      marginBlock: 0,
+      marginInline: 0.5
+    }
+  }), /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    gap: 1
+  }, /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "outlined",
+    color: "secondary",
+    disabled: usageIsLoading,
+    onClick: onScanUsage,
+    className: "e-id-elementor-element-manager-button-scan-element-usage",
+    loading: usageIsLoading
+  }, (0, _i18n.__)('Scan Element Usage', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "outlined",
+    color: "secondary",
+    onClick: onDeactivateUnused,
+    disabled: null === usageData,
+    className: "e-id-elementor-element-manager-button-deactivate-unused-elements"
+  }, (0, _i18n.__)('Deactivate Unused Elements', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "outlined",
+    color: "secondary",
+    disabled: !widgetsDisabledCount,
+    onClick: onEnableAll,
+    className: "e-id-elementor-element-manager-button-enable-all"
+  }, (0, _i18n.__)('Enable All', 'elementor'))))), /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    variant: "contained",
+    disabled: isSaving || !hasUnsavedChanges,
+    onClick: onSaveChanges,
+    className: "e-id-elementor-element-manager-button-save-changes",
+    loading: isSaving
+  }, (0, _i18n.__)('Save Changes', 'elementor'))));
+};
+SearchFilters.propTypes = {
+  searchKeyword: _propTypes.default.string.isRequired,
+  onSearchChange: _propTypes.default.func.isRequired,
+  filterByPlugin: _propTypes.default.string.isRequired,
+  onPluginFilterChange: _propTypes.default.func.isRequired,
+  filterByStatus: _propTypes.default.string.isRequired,
+  onStatusFilterChange: _propTypes.default.func.isRequired,
+  plugins: _propTypes.default.arrayOf(_propTypes.default.shape({
+    label: _propTypes.default.string.isRequired,
+    value: _propTypes.default.string.isRequired
+  })).isRequired,
+  usageIsLoading: _propTypes.default.bool,
+  usageData: _propTypes.default.object,
+  widgetsDisabledCount: _propTypes.default.number.isRequired,
+  onScanUsage: _propTypes.default.func.isRequired,
+  onDeactivateUnused: _propTypes.default.func.isRequired,
+  onEnableAll: _propTypes.default.func.isRequired,
+  onSaveChanges: _propTypes.default.func.isRequired,
+  isSaving: _propTypes.default.bool,
+  hasUnsavedChanges: _propTypes.default.bool
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/UsageTimesColumn.js":
+/*!******************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/UsageTimesColumn.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.UsageTimesColumn = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+var UsageTimesColumn = exports.UsageTimesColumn = function UsageTimesColumn(_ref) {
+  var widgetName = _ref.widgetName,
+    usageData = _ref.usageData,
+    isLoading = _ref.isLoading,
+    getWidgetUsage = _ref.getWidgetUsage,
+    onScanClick = _ref.onScanClick;
+  if (null !== usageData) {
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, getWidgetUsage(widgetName), " ", (0, _i18n.__)('times', 'elementor'));
+  }
+  if (isLoading) {
+    return /*#__PURE__*/_react.default.createElement(_ui.CircularProgress, {
+      color: "secondary",
+      size: 20
+    });
+  }
+  return /*#__PURE__*/_react.default.createElement(_ui.Button, {
+    onClick: onScanClick,
+    size: "small",
+    variant: "outlined",
+    color: "secondary",
+    className: "e-id-elementor-element-manager-button-show-usage",
+    sx: {
+      minWidth: function minWidth(theme) {
+        return theme.spacing(6);
+      },
+      height: 26
+    }
+  }, (0, _i18n.__)('Show', 'elementor'));
+};
+UsageTimesColumn.propTypes = {
+  widgetName: _propTypes.default.string.isRequired,
+  usageData: _propTypes.default.object,
+  isLoading: _propTypes.default.bool,
+  getWidgetUsage: _propTypes.default.func.isRequired,
+  onScanClick: _propTypes.default.func.isRequired
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/WidgetsTable.js":
+/*!**************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/WidgetsTable.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.WidgetsTable = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _icons = __webpack_require__(/*! @elementor/icons */ "@elementor/icons");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+var _upgradeButton = __webpack_require__(/*! ../../upgrade-button */ "../modules/element-manager/assets/js/upgrade-button.js");
+var _RolePermissions = __webpack_require__(/*! ./RolePermissions */ "../modules/element-manager/assets/js/app-editor-one/components/RolePermissions.js");
+var _UsageTimesColumn = __webpack_require__(/*! ./UsageTimesColumn */ "../modules/element-manager/assets/js/app-editor-one/components/UsageTimesColumn.js");
+var StyledSwitch = (0, _ui.styled)(_ui.Switch)({
+  '& .MuiSwitch-track': {
+    backgroundColor: 'rgba(0, 0, 0, 0.12);'
+  },
+  '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+    backgroundColor: '#000'
+  },
+  '& .MuiSwitch-switchBase:not(.Mui-checked) .MuiSwitch-thumb': {
+    backgroundColor: '#D5D8DC'
+  },
+  '& .MuiSwitch-switchBase.Mui-checked .MuiSwitch-thumb': {
+    backgroundColor: '#fff'
+  }
+});
+var WidgetsTable = exports.WidgetsTable = function WidgetsTable(_ref) {
+  var widgets = _ref.widgets,
+    widgetsDisabled = _ref.widgetsDisabled,
+    widgetsRoleRestrictions = _ref.widgetsRoleRestrictions,
+    setWidgetsRoleRestrictions = _ref.setWidgetsRoleRestrictions,
+    roles = _ref.roles,
+    promotionWidgets = _ref.promotionWidgets,
+    promotionData = _ref.promotionData,
+    usageWidgets = _ref.usageWidgets,
+    getWidgetUsage = _ref.getWidgetUsage,
+    onScanUsage = _ref.onScanUsage,
+    onToggleWidget = _ref.onToggleWidget,
+    getSortingIndicatorClasses = _ref.getSortingIndicatorClasses,
+    onSortingClicked = _ref.onSortingClicked;
+  var managerPermissions = promotionData.manager_permissions;
+  var sortingClasses = getSortingIndicatorClasses('widget');
+  var isWidgetSorted = sortingClasses.includes('sorted');
+  var widgetSortDirection = sortingClasses.includes('asc') ? 'asc' : 'desc';
+  var usageSortingClasses = getSortingIndicatorClasses('usage');
+  var isUsageSorted = usageSortingClasses.includes('sorted');
+  var usageSortDirection = usageSortingClasses.includes('asc') ? 'asc' : 'desc';
+  if (!widgets.length) {
+    return /*#__PURE__*/_react.default.createElement(_ui.Typography, {
+      color: "text.secondary"
+    }, (0, _i18n.__)('No elements found.', 'elementor'));
+  }
+  return /*#__PURE__*/_react.default.createElement(_ui.TableContainer, {
+    component: _ui.Paper,
+    variant: "outlined"
+  }, /*#__PURE__*/_react.default.createElement(_ui.Table, {
+    size: "small"
+  }, /*#__PURE__*/_react.default.createElement(_ui.TableHead, null, /*#__PURE__*/_react.default.createElement(_ui.TableRow, null, /*#__PURE__*/_react.default.createElement(_ui.TableCell, {
+    sx: function sx(theme) {
+      return {
+        width: theme.spacing(25)
+      };
+    }
+  }, /*#__PURE__*/_react.default.createElement(_ui.TableSortLabel, {
+    active: isWidgetSorted,
+    direction: isWidgetSorted ? widgetSortDirection : 'asc',
+    onClick: function onClick() {
+      return onSortingClicked('widget');
+    },
+    className: "e-id-elementor-element-manager-button-sort-by-element"
+  }, (0, _i18n.__)('Element', 'elementor'))), /*#__PURE__*/_react.default.createElement(_ui.TableCell, {
+    sx: function sx(theme) {
+      return {
+        width: theme.spacing(10)
+      };
+    }
+  }, (0, _i18n.__)('Status', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_ui.TableSortLabel, {
+    active: isUsageSorted,
+    direction: isUsageSorted ? usageSortDirection : 'asc',
+    onClick: function onClick() {
+      return onSortingClicked('usage');
+    },
+    className: "e-id-elementor-element-manager-button-sort-by-usage"
+  }, (0, _i18n.__)('Usage', 'elementor'))), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, (0, _i18n.__)('Plugin', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_ui.Stack, {
+    direction: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    gap: 1
+  }, /*#__PURE__*/_react.default.createElement(_ui.Box, null, (0, _i18n.__)('Permission', 'elementor')), /*#__PURE__*/_react.default.createElement(_ui.Box, null, /*#__PURE__*/_react.default.createElement(_ui.Tooltip, {
+    placement: "top",
+    title: (0, _i18n.__)('Choose which users will have access to each widget.', 'elementor')
+  }, /*#__PURE__*/_react.default.createElement(_ui.IconButton, {
+    size: "small"
+  }, /*#__PURE__*/_react.default.createElement(_icons.HelpIcon, {
+    fontSize: "small"
+  })))), null === widgetsRoleRestrictions && /*#__PURE__*/_react.default.createElement(_ui.Box, {
+    sx: {
+      marginInlineStart: 1
+    }
+  }, /*#__PURE__*/_react.default.createElement(_upgradeButton.UpgradeButton, {
+    href: promotionWidgets.length ? managerPermissions.pro.url : managerPermissions.advanced.url,
+    size: "small",
+    text: promotionWidgets.length ? managerPermissions.pro.text : managerPermissions.advanced.text,
+    className: ['e-id-elementor-element-manager-button-upgrade-permissions', 'go-pro'].join(' ')
+  })))))), /*#__PURE__*/_react.default.createElement(_ui.TableBody, null, widgets.map(function (widget) {
+    return /*#__PURE__*/_react.default.createElement(_ui.TableRow, {
+      key: widget.name,
+      "data-key-id": widget.name,
+      hover: true
+    }, /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_ui.Box, {
+      sx: {
+        display: 'flex',
+        alignItems: 'center'
+      }
+    }, /*#__PURE__*/_react.default.createElement("i", {
+      style: {
+        marginInlineEnd: 8,
+        marginInlineStart: 0,
+        display: 'inline-block'
+      },
+      className: widget.icon
+    }), widget.title)), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(StyledSwitch, {
+      color: "secondary",
+      checked: !widgetsDisabled.includes(widget.name),
+      onChange: function onChange(event, checked) {
+        return onToggleWidget(widget.name, checked);
+      },
+      size: "small",
+      className: "e-id-elementor-element-manager-toggle-".concat(widget.name)
+    })), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, /*#__PURE__*/_react.default.createElement(_UsageTimesColumn.UsageTimesColumn, {
+      widgetName: widget.name,
+      usageData: usageWidgets.data,
+      isLoading: usageWidgets.isLoading,
+      getWidgetUsage: getWidgetUsage,
+      onScanClick: onScanUsage
+    })), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, widget.plugin), /*#__PURE__*/_react.default.createElement(_ui.TableCell, null, null !== widgetsRoleRestrictions && !widgetsDisabled.includes(widget.name) ? /*#__PURE__*/_react.default.createElement(_RolePermissions.RolePermissions, {
+      widgetName: widget.name,
+      roles: roles,
+      widgetsRoleRestrictions: widgetsRoleRestrictions,
+      setWidgetsRoleRestrictions: setWidgetsRoleRestrictions
+    }) : /*#__PURE__*/_react.default.createElement(_RolePermissions.EditButtonDisabled, null)));
+  }))));
+};
+var widgetShape = _propTypes.default.shape({
+  name: _propTypes.default.string.isRequired,
+  title: _propTypes.default.string.isRequired,
+  icon: _propTypes.default.string,
+  plugin: _propTypes.default.string
+});
+WidgetsTable.propTypes = {
+  widgets: _propTypes.default.arrayOf(widgetShape).isRequired,
+  widgetsDisabled: _propTypes.default.arrayOf(_propTypes.default.string).isRequired,
+  widgetsRoleRestrictions: _propTypes.default.oneOfType([_propTypes.default.object, _propTypes.default.array]),
+  setWidgetsRoleRestrictions: _propTypes.default.func.isRequired,
+  roles: _propTypes.default.array.isRequired,
+  promotionWidgets: _propTypes.default.arrayOf(widgetShape).isRequired,
+  promotionData: _propTypes.default.shape({
+    manager_permissions: _propTypes.default.shape({
+      pro: _propTypes.default.shape({
+        url: _propTypes.default.string,
+        text: _propTypes.default.string
+      }),
+      advanced: _propTypes.default.shape({
+        url: _propTypes.default.string,
+        text: _propTypes.default.string
+      })
+    })
+  }).isRequired,
+  usageWidgets: _propTypes.default.shape({
+    isLoading: _propTypes.default.bool,
+    data: _propTypes.default.object
+  }).isRequired,
+  getWidgetUsage: _propTypes.default.func.isRequired,
+  onScanUsage: _propTypes.default.func.isRequired,
+  onToggleWidget: _propTypes.default.func.isRequired,
+  getSortingIndicatorClasses: _propTypes.default.func.isRequired,
+  onSortingClicked: _propTypes.default.func.isRequired
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/components/index.js":
+/*!*******************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/components/index.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+Object.defineProperty(exports, "ConfirmDialog", ({
+  enumerable: true,
+  get: function get() {
+    return _ConfirmDialog.ConfirmDialog;
+  }
+}));
+Object.defineProperty(exports, "EditButtonDisabled", ({
+  enumerable: true,
+  get: function get() {
+    return _RolePermissions.EditButtonDisabled;
+  }
+}));
+Object.defineProperty(exports, "NoticeAlert", ({
+  enumerable: true,
+  get: function get() {
+    return _NoticeAlert.NoticeAlert;
+  }
+}));
+Object.defineProperty(exports, "PromotionWidgetsTable", ({
+  enumerable: true,
+  get: function get() {
+    return _PromotionWidgetsTable.PromotionWidgetsTable;
+  }
+}));
+Object.defineProperty(exports, "RolePermissions", ({
+  enumerable: true,
+  get: function get() {
+    return _RolePermissions.RolePermissions;
+  }
+}));
+Object.defineProperty(exports, "SearchFilters", ({
+  enumerable: true,
+  get: function get() {
+    return _SearchFilters.SearchFilters;
+  }
+}));
+Object.defineProperty(exports, "UsageTimesColumn", ({
+  enumerable: true,
+  get: function get() {
+    return _UsageTimesColumn.UsageTimesColumn;
+  }
+}));
+Object.defineProperty(exports, "WidgetsTable", ({
+  enumerable: true,
+  get: function get() {
+    return _WidgetsTable.WidgetsTable;
+  }
+}));
+var _UsageTimesColumn = __webpack_require__(/*! ./UsageTimesColumn */ "../modules/element-manager/assets/js/app-editor-one/components/UsageTimesColumn.js");
+var _NoticeAlert = __webpack_require__(/*! ./NoticeAlert */ "../modules/element-manager/assets/js/app-editor-one/components/NoticeAlert.js");
+var _ConfirmDialog = __webpack_require__(/*! ./ConfirmDialog */ "../modules/element-manager/assets/js/app-editor-one/components/ConfirmDialog.js");
+var _SearchFilters = __webpack_require__(/*! ./SearchFilters */ "../modules/element-manager/assets/js/app-editor-one/components/SearchFilters.js");
+var _WidgetsTable = __webpack_require__(/*! ./WidgetsTable */ "../modules/element-manager/assets/js/app-editor-one/components/WidgetsTable.js");
+var _PromotionWidgetsTable = __webpack_require__(/*! ./PromotionWidgetsTable */ "../modules/element-manager/assets/js/app-editor-one/components/PromotionWidgetsTable.js");
+var _RolePermissions = __webpack_require__(/*! ./RolePermissions */ "../modules/element-manager/assets/js/app-editor-one/components/RolePermissions.js");
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/hooks/index.js":
+/*!**************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/hooks/index.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+Object.defineProperty(exports, "useElementManager", ({
+  enumerable: true,
+  get: function get() {
+    return _useElementManager.useElementManager;
+  }
+}));
+Object.defineProperty(exports, "useWidgetFilters", ({
+  enumerable: true,
+  get: function get() {
+    return _useWidgetFilters.useWidgetFilters;
+  }
+}));
+var _useElementManager = __webpack_require__(/*! ./useElementManager */ "../modules/element-manager/assets/js/app-editor-one/hooks/useElementManager.js");
+var _useWidgetFilters = __webpack_require__(/*! ./useWidgetFilters */ "../modules/element-manager/assets/js/app-editor-one/hooks/useWidgetFilters.js");
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/hooks/useElementManager.js":
+/*!**************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/hooks/useElementManager.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.useElementManager = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ "../node_modules/@babel/runtime/regenerator/index.js"));
+var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "../node_modules/@babel/runtime/helpers/toConsumableArray.js"));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
+var _react = __webpack_require__(/*! react */ "react");
+var _api = __webpack_require__(/*! ../../api */ "../modules/element-manager/assets/js/api.js");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+var useElementManager = exports.useElementManager = function useElementManager() {
+  var _useState = (0, _react.useState)(true),
+    _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+    isLoading = _useState2[0],
+    setIsLoading = _useState2[1];
+  var _useState3 = (0, _react.useState)([]),
+    _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
+    widgets = _useState4[0],
+    setWidgets = _useState4[1];
+  var _useState5 = (0, _react.useState)([]),
+    _useState6 = (0, _slicedToArray2.default)(_useState5, 2),
+    promotionWidgets = _useState6[0],
+    setPromotionWidgets = _useState6[1];
+  var _useState7 = (0, _react.useState)([]),
+    _useState8 = (0, _slicedToArray2.default)(_useState7, 2),
+    plugins = _useState8[0],
+    setPlugins = _useState8[1];
+  var _useState9 = (0, _react.useState)([]),
+    _useState0 = (0, _slicedToArray2.default)(_useState9, 2),
+    roles = _useState0[0],
+    setRoles = _useState0[1];
+  var _useState1 = (0, _react.useState)([]),
+    _useState10 = (0, _slicedToArray2.default)(_useState1, 2),
+    widgetsDisabled = _useState10[0],
+    setWidgetsDisabled = _useState10[1];
+  var _useState11 = (0, _react.useState)(null),
+    _useState12 = (0, _slicedToArray2.default)(_useState11, 2),
+    widgetsRoleRestrictions = _useState12[0],
+    setWidgetsRoleRestrictions = _useState12[1];
+  var _useState13 = (0, _react.useState)([]),
+    _useState14 = (0, _slicedToArray2.default)(_useState13, 2),
+    promotionData = _useState14[0],
+    setPromotionData = _useState14[1];
+  var _useState15 = (0, _react.useState)(null),
+    _useState16 = (0, _slicedToArray2.default)(_useState15, 2),
+    noticeData = _useState16[0],
+    setNoticeData = _useState16[1];
+  var _useState17 = (0, _react.useState)({
+      isLoading: false,
+      data: null
+    }),
+    _useState18 = (0, _slicedToArray2.default)(_useState17, 2),
+    usageWidgets = _useState18[0],
+    setUsageWidgets = _useState18[1];
+  var _useState19 = (0, _react.useState)({
+      isSaving: false,
+      isUnsavedChanges: false
+    }),
+    _useState20 = (0, _slicedToArray2.default)(_useState19, 2),
+    changeProgress = _useState20[0],
+    setChangeProgress = _useState20[1];
+  var _useState21 = (0, _react.useState)(false),
+    _useState22 = (0, _slicedToArray2.default)(_useState21, 2),
+    isSnackbarOpen = _useState22[0],
+    setIsSnackbarOpen = _useState22[1];
+  var getWidgetUsage = (0, _react.useCallback)(function (widgetName) {
+    if (!usageWidgets.data || !usageWidgets.data.hasOwnProperty(widgetName)) {
+      return 0;
+    }
+    return usageWidgets.data[widgetName];
+  }, [usageWidgets.data]);
+  var scanUsageElements = (0, _react.useCallback)(/*#__PURE__*/(0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee() {
+    var data;
+    return _regenerator.default.wrap(function (_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          setUsageWidgets(function (prev) {
+            return _objectSpread(_objectSpread({}, prev), {}, {
+              isLoading: true
+            });
+          });
+          _context.next = 1;
+          return (0, _api.getUsageWidgets)();
+        case 1:
+          data = _context.sent;
+          setUsageWidgets({
+            data: data,
+            isLoading: false
+          });
+          return _context.abrupt("return", data);
+        case 2:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  })), []);
+  var saveChanges = (0, _react.useCallback)(/*#__PURE__*/(0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee2() {
+    return _regenerator.default.wrap(function (_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          setChangeProgress(function (prev) {
+            return _objectSpread(_objectSpread({}, prev), {}, {
+              isSaving: true
+            });
+          });
+          _context2.next = 1;
+          return (0, _api.saveDisabledWidgets)(widgetsDisabled, widgetsRoleRestrictions);
+        case 1:
+          setChangeProgress({
+            isSaving: false,
+            isUnsavedChanges: false
+          });
+          setIsSnackbarOpen(true);
+        case 2:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2);
+  })), [widgetsDisabled, widgetsRoleRestrictions]);
+  var deactivateAllUnusedWidgets = (0, _react.useCallback)(function () {
+    if (!usageWidgets.data) {
+      return;
+    }
+    var widgetsToDeactivate = widgets.filter(function (widget) {
+      return !usageWidgets.data.hasOwnProperty(widget.name) || widgetsDisabled.includes(widget.name);
+    });
+    setWidgetsDisabled(widgetsToDeactivate.map(function (widget) {
+      return widget.name;
+    }));
+  }, [widgets, usageWidgets.data, widgetsDisabled]);
+  var enableAllWidgets = (0, _react.useCallback)(function () {
+    setWidgetsDisabled([]);
+  }, []);
+  var toggleWidget = (0, _react.useCallback)(function (widgetName, isEnabled) {
+    if (isEnabled) {
+      setWidgetsDisabled(function (prev) {
+        return prev.filter(function (item) {
+          return item !== widgetName;
+        });
+      });
+    } else {
+      setWidgetsDisabled(function (prev) {
+        return [].concat((0, _toConsumableArray2.default)(prev), [widgetName]);
+      });
+    }
+  }, []);
+  var dismissNotice = (0, _react.useCallback)(function () {
+    if (noticeData) {
+      (0, _api.markNoticeViewed)(noticeData.notice_id, noticeData.nonce);
+      setNoticeData(function (prev) {
+        return _objectSpread(_objectSpread({}, prev), {}, {
+          is_viewed: true
+        });
+      });
+    }
+  }, [noticeData]);
+  (0, _react.useEffect)(function () {
+    var loadData = /*#__PURE__*/function () {
+      var _ref3 = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee3() {
+        var _appData$additional_d, _appData$additional_d2;
+        var appData, pluginsData;
+        return _regenerator.default.wrap(function (_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 1;
+              return (0, _api.getAdminAppData)();
+            case 1:
+              appData = _context3.sent;
+              setNoticeData(appData.notice_data);
+              setWidgetsDisabled(appData.disabled_elements);
+              setWidgets(appData.widgets);
+              setPromotionWidgets(appData.promotion_widgets);
+              setPromotionData(appData.promotion_data);
+              if ((_appData$additional_d = appData.additional_data) !== null && _appData$additional_d !== void 0 && _appData$additional_d.roles) {
+                setRoles(appData.additional_data.roles);
+              }
+              if ((_appData$additional_d2 = appData.additional_data) !== null && _appData$additional_d2 !== void 0 && _appData$additional_d2.role_restrictions) {
+                setWidgetsRoleRestrictions(appData.additional_data.role_restrictions);
+              }
+              pluginsData = appData.plugins.map(function (plugin) {
+                return {
+                  label: plugin,
+                  value: plugin
+                };
+              });
+              pluginsData.unshift({
+                label: 'All Plugins',
+                value: ''
+              });
+              setPlugins(pluginsData);
+              setIsLoading(false);
+            case 2:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      }));
+      return function loadData() {
+        return _ref3.apply(this, arguments);
+      };
+    }();
+    loadData();
+  }, []);
+  (0, _react.useEffect)(function () {
+    if (isLoading) {
+      return;
+    }
+    setChangeProgress(function (prev) {
+      return _objectSpread(_objectSpread({}, prev), {}, {
+        isUnsavedChanges: true
+      });
+    });
+  }, [widgetsDisabled, widgetsRoleRestrictions, isLoading]);
+  (0, _react.useEffect)(function () {
+    var handleBeforeUnload = function handleBeforeUnload(event) {
+      event.preventDefault();
+      event.returnValue = '';
+    };
+    if (changeProgress.isUnsavedChanges) {
+      window.addEventListener('beforeunload', handleBeforeUnload);
+    } else {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    }
+    return function () {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [changeProgress.isUnsavedChanges]);
+  return {
+    isLoading: isLoading,
+    widgets: widgets,
+    promotionWidgets: promotionWidgets,
+    plugins: plugins,
+    roles: roles,
+    widgetsDisabled: widgetsDisabled,
+    widgetsRoleRestrictions: widgetsRoleRestrictions,
+    setWidgetsRoleRestrictions: setWidgetsRoleRestrictions,
+    promotionData: promotionData,
+    noticeData: noticeData,
+    usageWidgets: usageWidgets,
+    changeProgress: changeProgress,
+    isSnackbarOpen: isSnackbarOpen,
+    setIsSnackbarOpen: setIsSnackbarOpen,
+    getWidgetUsage: getWidgetUsage,
+    scanUsageElements: scanUsageElements,
+    saveChanges: saveChanges,
+    deactivateAllUnusedWidgets: deactivateAllUnusedWidgets,
+    enableAllWidgets: enableAllWidgets,
+    toggleWidget: toggleWidget,
+    dismissNotice: dismissNotice
+  };
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/hooks/useWidgetFilters.js":
+/*!*************************************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/hooks/useWidgetFilters.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.useWidgetFilters = void 0;
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
+var _react = __webpack_require__(/*! react */ "react");
+var useWidgetFilters = exports.useWidgetFilters = function useWidgetFilters(widgets, widgetsDisabled, getWidgetUsage) {
+  var _useState = (0, _react.useState)(''),
+    _useState2 = (0, _slicedToArray2.default)(_useState, 2),
+    searchKeyword = _useState2[0],
+    setSearchKeyword = _useState2[1];
+  var _useState3 = (0, _react.useState)('widget'),
+    _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
+    sortingColumn = _useState4[0],
+    setSortingColumn = _useState4[1];
+  var _useState5 = (0, _react.useState)('asc'),
+    _useState6 = (0, _slicedToArray2.default)(_useState5, 2),
+    sortingDirection = _useState6[0],
+    setSortingDirection = _useState6[1];
+  var _useState7 = (0, _react.useState)(''),
+    _useState8 = (0, _slicedToArray2.default)(_useState7, 2),
+    filterByPlugin = _useState8[0],
+    setFilterByPlugin = _useState8[1];
+  var _useState9 = (0, _react.useState)('all'),
+    _useState0 = (0, _slicedToArray2.default)(_useState9, 2),
+    filterByStatus = _useState0[0],
+    setFilterByStatus = _useState0[1];
+  var sortedAndFilteredWidgets = (0, _react.useMemo)(function () {
+    var filteredWidgets = widgets.filter(function (widget) {
+      return widget.title.toLowerCase().includes(searchKeyword.toLowerCase());
+    });
+    if ('' !== filterByPlugin) {
+      filteredWidgets = filteredWidgets.filter(function (widget) {
+        return widget.plugin.toLowerCase() === filterByPlugin.toLowerCase();
+      });
+    }
+    if ('all' !== filterByStatus) {
+      filteredWidgets = filteredWidgets.filter(function (widget) {
+        if ('active' === filterByStatus) {
+          return !widgetsDisabled.includes(widget.name);
+        }
+        return widgetsDisabled.includes(widget.name);
+      });
+    }
+    filteredWidgets.sort(function (a, b) {
+      var aValue;
+      var bValue;
+      if ('widget' === sortingColumn) {
+        aValue = a.title;
+        bValue = b.title;
+      }
+      if ('usage' === sortingColumn) {
+        aValue = getWidgetUsage(a.name);
+        bValue = getWidgetUsage(b.name);
+      }
+      if (aValue === bValue) {
+        return 0;
+      }
+      if ('asc' === sortingDirection) {
+        return aValue < bValue ? -1 : 1;
+      }
+      return aValue > bValue ? -1 : 1;
+    });
+    return filteredWidgets;
+  }, [widgets, searchKeyword, sortingColumn, sortingDirection, filterByPlugin, filterByStatus, widgetsDisabled, getWidgetUsage]);
+  var getSortingIndicatorClasses = (0, _react.useCallback)(function (column) {
+    if (sortingColumn !== column) {
+      return '';
+    }
+    return 'asc' === sortingDirection ? 'sorted asc' : 'sorted desc';
+  }, [sortingColumn, sortingDirection]);
+  var onSortingClicked = (0, _react.useCallback)(function (column) {
+    if (sortingColumn === column) {
+      setSortingDirection(function (prev) {
+        return 'asc' === prev ? 'desc' : 'asc';
+      });
+    } else {
+      setSortingColumn(column);
+      setSortingDirection('asc');
+    }
+  }, [sortingColumn]);
+  var setSortByUsage = (0, _react.useCallback)(function () {
+    setSortingColumn('usage');
+    setSortingDirection('desc');
+  }, []);
+  return {
+    searchKeyword: searchKeyword,
+    setSearchKeyword: setSearchKeyword,
+    filterByPlugin: filterByPlugin,
+    setFilterByPlugin: setFilterByPlugin,
+    filterByStatus: filterByStatus,
+    setFilterByStatus: setFilterByStatus,
+    sortedAndFilteredWidgets: sortedAndFilteredWidgets,
+    getSortingIndicatorClasses: getSortingIndicatorClasses,
+    onSortingClicked: onSortingClicked,
+    setSortByUsage: setSortByUsage
+  };
+};
+
+/***/ }),
+
+/***/ "../modules/element-manager/assets/js/app-editor-one/index.js":
+/*!********************************************************************!*\
+  !*** ../modules/element-manager/assets/js/app-editor-one/index.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.AppModern = void 0;
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+var _App = __webpack_require__(/*! ./App */ "../modules/element-manager/assets/js/app-editor-one/App.js");
+var AppModern = exports.AppModern = function AppModern() {
+  var _elementorCommon$conf;
+  var isRTL = typeof elementorCommon !== 'undefined' && (_elementorCommon$conf = elementorCommon.config) !== null && _elementorCommon$conf !== void 0 && _elementorCommon$conf.isRTL ? elementorCommon.config.isRTL : 'rtl' === document.documentElement.dir || document.body.classList.contains('rtl');
+  return /*#__PURE__*/_react.default.createElement(_ui.DirectionProvider, {
+    rtl: isRTL
+  }, /*#__PURE__*/_react.default.createElement(_ui.ThemeProvider, {
+    colorScheme: "light"
+  }, /*#__PURE__*/_react.default.createElement(_App.App, null)));
+};
+
+/***/ }),
+
 /***/ "../modules/element-manager/assets/js/app.js":
 /*!***************************************************!*\
   !*** ../modules/element-manager/assets/js/app.js ***!
@@ -202,100 +1699,101 @@ var markNoticeViewed = exports.markNoticeViewed = /*#__PURE__*/function () {
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "../node_modules/@babel/runtime/helpers/typeof.js");
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.App = void 0;
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+exports.AppLegacy = void 0;
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ "../node_modules/@babel/runtime/regenerator/index.js"));
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "../node_modules/@babel/runtime/helpers/toConsumableArray.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
-var _element = __webpack_require__(/*! @wordpress/element */ "../node_modules/@wordpress/element/build-module/index.js");
 var _components = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _upgradeButton = __webpack_require__(/*! ./upgrade-button */ "../modules/element-manager/assets/js/upgrade-button.js");
 var _api = __webpack_require__(/*! ./api */ "../modules/element-manager/assets/js/api.js");
 var _rolePermissions = __webpack_require__(/*! ./role-permissions */ "../modules/element-manager/assets/js/role-permissions.js");
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function _interopRequireWildcard(e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != _typeof(e) && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (var _t in e) "default" !== _t && {}.hasOwnProperty.call(e, _t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, _t)) && (i.get || i.set) ? o(f, _t, i) : f[_t] = e[_t]); return f; })(e, t); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; } /* eslint-disable react/prop-types */
-var App = exports.App = function App() {
-  var _useState = (0, _element.useState)(true),
+var AppLegacy = exports.AppLegacy = function AppLegacy() {
+  var _useState = (0, _react.useState)(true),
     _useState2 = (0, _slicedToArray2.default)(_useState, 2),
     isLoading = _useState2[0],
     setIsLoading = _useState2[1];
-  var _useState3 = (0, _element.useState)(''),
+  var _useState3 = (0, _react.useState)(''),
     _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
     searchKeyword = _useState4[0],
     setSearchKeyword = _useState4[1];
-  var _useState5 = (0, _element.useState)([]),
+  var _useState5 = (0, _react.useState)([]),
     _useState6 = (0, _slicedToArray2.default)(_useState5, 2),
     widgets = _useState6[0],
     setWidgets = _useState6[1];
-  var _useState7 = (0, _element.useState)([]),
+  var _useState7 = (0, _react.useState)([]),
     _useState8 = (0, _slicedToArray2.default)(_useState7, 2),
     promotionWidgets = _useState8[0],
     setPromotionWidgets = _useState8[1];
-  var _useState9 = (0, _element.useState)([]),
+  var _useState9 = (0, _react.useState)([]),
     _useState0 = (0, _slicedToArray2.default)(_useState9, 2),
     plugins = _useState0[0],
     setPlugins = _useState0[1];
-  var _useState1 = (0, _element.useState)([]),
+  var _useState1 = (0, _react.useState)([]),
     _useState10 = (0, _slicedToArray2.default)(_useState1, 2),
     roles = _useState10[0],
     setRoles = _useState10[1];
-  var _useState11 = (0, _element.useState)({
+  var _useState11 = (0, _react.useState)({
       isLoading: false,
       data: null
     }),
     _useState12 = (0, _slicedToArray2.default)(_useState11, 2),
     usageWidgets = _useState12[0],
     setUsageWidgets = _useState12[1];
-  var _useState13 = (0, _element.useState)([]),
+  var _useState13 = (0, _react.useState)([]),
     _useState14 = (0, _slicedToArray2.default)(_useState13, 2),
     widgetsDisabled = _useState14[0],
     setWidgetsDisabled = _useState14[1];
-  var _useState15 = (0, _element.useState)('widget'),
+  var _useState15 = (0, _react.useState)('widget'),
     _useState16 = (0, _slicedToArray2.default)(_useState15, 2),
     sortingColumn = _useState16[0],
     setSortingColumn = _useState16[1];
-  var _useState17 = (0, _element.useState)('asc'),
+  var _useState17 = (0, _react.useState)('asc'),
     _useState18 = (0, _slicedToArray2.default)(_useState17, 2),
     sortingDirection = _useState18[0],
     setSortingDirection = _useState18[1];
-  var _useState19 = (0, _element.useState)(''),
+  var _useState19 = (0, _react.useState)(''),
     _useState20 = (0, _slicedToArray2.default)(_useState19, 2),
     filterByPlugin = _useState20[0],
     setFilterByPlugin = _useState20[1];
-  var _useState21 = (0, _element.useState)('all'),
+  var _useState21 = (0, _react.useState)('all'),
     _useState22 = (0, _slicedToArray2.default)(_useState21, 2),
     filterByStatus = _useState22[0],
     setFilterByStatus = _useState22[1];
-  var _useState23 = (0, _element.useState)({
+  var _useState23 = (0, _react.useState)({
       isSaving: false,
       isUnsavedChanges: false
     }),
     _useState24 = (0, _slicedToArray2.default)(_useState23, 2),
     changeProgress = _useState24[0],
     setChangeProgress = _useState24[1];
-  var _useState25 = (0, _element.useState)(false),
+  var _useState25 = (0, _react.useState)(false),
     _useState26 = (0, _slicedToArray2.default)(_useState25, 2),
     isConfirmDialogOpen = _useState26[0],
     setIsConfirmDialogOpen = _useState26[1];
-  var _useState27 = (0, _element.useState)(false),
+  var _useState27 = (0, _react.useState)(false),
     _useState28 = (0, _slicedToArray2.default)(_useState27, 2),
     isSnackbarOpen = _useState28[0],
     setIsSnackbarOpen = _useState28[1];
-  var _useState29 = (0, _element.useState)(null),
+  var _useState29 = (0, _react.useState)(null),
     _useState30 = (0, _slicedToArray2.default)(_useState29, 2),
     noticeData = _useState30[0],
     setNoticeData = _useState30[1];
-  var _useState31 = (0, _element.useState)(null),
+  var _useState31 = (0, _react.useState)(null),
     _useState32 = (0, _slicedToArray2.default)(_useState31, 2),
     widgetsRoleRestrictions = _useState32[0],
     setWidgetsRoleRestrictions = _useState32[1];
-  var _useState33 = (0, _element.useState)([]),
+  var _useState33 = (0, _react.useState)([]),
     _useState34 = (0, _slicedToArray2.default)(_useState33, 2),
     promotionData = _useState34[0],
     setPromotionData = _useState34[1];
@@ -307,7 +1805,7 @@ var App = exports.App = function App() {
     }
     return usageWidgets.data[widgetName];
   };
-  var sortedAndFilteredWidgets = (0, _element.useMemo)(function () {
+  var sortedAndFilteredWidgets = (0, _react.useMemo)(function () {
     var filteredWidgets = widgets.filter(function (widget) {
       return widget.title.toLowerCase().includes(searchKeyword.toLowerCase());
     });
@@ -448,7 +1946,7 @@ var App = exports.App = function App() {
       className: "e-id-elementor-element-manager-button-show-usage"
     }, (0, _i18n.__)('Show', 'elementor'));
   };
-  (0, _element.useEffect)(function () {
+  (0, _react.useEffect)(function () {
     var onLoading = /*#__PURE__*/function () {
       var _ref4 = (0, _asyncToGenerator2.default)(/*#__PURE__*/_regenerator.default.mark(function _callee3() {
         var _appData$additional_d, _appData$additional_d2;
@@ -495,7 +1993,7 @@ var App = exports.App = function App() {
     }();
     onLoading();
   }, []);
-  (0, _element.useEffect)(function () {
+  (0, _react.useEffect)(function () {
     if (isLoading) {
       return;
     }
@@ -503,7 +2001,7 @@ var App = exports.App = function App() {
       isUnsavedChanges: true
     }));
   }, [widgetsDisabled, widgetsRoleRestrictions]);
-  (0, _element.useEffect)(function () {
+  (0, _react.useEffect)(function () {
     var handleBeforeUnload = function handleBeforeUnload(event) {
       event.preventDefault();
       event.returnValue = '';
@@ -1391,19 +2889,17 @@ function _regeneratorDefine(e, r, n, t) {
     i = 0;
   }
   module.exports = _regeneratorDefine = function regeneratorDefine(e, r, n, t) {
-    if (r) i ? i(e, r, {
+    function o(r, n) {
+      _regeneratorDefine(e, r, function (e) {
+        return this._invoke(r, n, e);
+      });
+    }
+    r ? i ? i(e, r, {
       value: n,
       enumerable: !t,
       configurable: !t,
       writable: !t
-    }) : e[r] = n;else {
-      var o = function o(r, n) {
-        _regeneratorDefine(e, r, function (e) {
-          return this._invoke(r, n, e);
-        });
-      };
-      o("next", 0), o("throw", 1), o("return", 2);
-    }
+    }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2));
   }, module.exports.__esModule = true, module.exports["default"] = module.exports, _regeneratorDefine(e, r, n, t);
 }
 module.exports = _regeneratorDefine, module.exports.__esModule = true, module.exports["default"] = module.exports;
@@ -2602,10 +4098,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   renderStyle: () => (/* binding */ renderStyle)
 /* harmony export */ });
 /* harmony import */ var is_plain_object__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! is-plain-object */ "../node_modules/is-plain-object/dist/is-plain-object.mjs");
-/* harmony import */ var change_case__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! change-case */ "../node_modules/param-case/dist.es2015/index.js");
-/* harmony import */ var _wordpress_escape_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/escape-html */ "../node_modules/@wordpress/escape-html/build-module/index.js");
-/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./react */ "react");
-/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var change_case__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! change-case */ "../node_modules/param-case/dist.es2015/index.js");
+/* harmony import */ var _wordpress_escape_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/escape-html */ "../node_modules/@wordpress/escape-html/build-module/index.js");
+/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./react */ "react");
+/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _raw_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./raw-html */ "../node_modules/@wordpress/element/build-module/raw-html.js");
 /**
  * Parts of this source were derived and modified from fast-react-render,
@@ -2656,8 +4152,8 @@ __webpack_require__.r(__webpack_exports__);
 const {
   Provider,
   Consumer
-} = (0,_react__WEBPACK_IMPORTED_MODULE_1__.createContext)(undefined);
-const ForwardRef = (0,_react__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => {
+} = (0,_react__WEBPACK_IMPORTED_MODULE_3__.createContext)(undefined);
+const ForwardRef = (0,_react__WEBPACK_IMPORTED_MODULE_3__.forwardRef)(() => {
   return null;
 });
 
@@ -2825,7 +4321,7 @@ function getNormalAttributeName(attribute) {
   if (CASE_SENSITIVE_SVG_ATTRIBUTES[attributeLowerCase]) {
     return CASE_SENSITIVE_SVG_ATTRIBUTES[attributeLowerCase];
   } else if (SVG_ATTRIBUTE_WITH_DASHES_LIST[attributeLowerCase]) {
-    return (0,change_case__WEBPACK_IMPORTED_MODULE_2__.paramCase)(SVG_ATTRIBUTE_WITH_DASHES_LIST[attributeLowerCase]);
+    return (0,change_case__WEBPACK_IMPORTED_MODULE_1__.paramCase)(SVG_ATTRIBUTE_WITH_DASHES_LIST[attributeLowerCase]);
   } else if (SVG_ATTRIBUTES_WITH_COLONS[attributeLowerCase]) {
     return SVG_ATTRIBUTES_WITH_COLONS[attributeLowerCase];
   }
@@ -2848,9 +4344,9 @@ function getNormalStylePropertyName(property) {
     return property;
   }
   if (hasPrefix(property, ['ms', 'O', 'Moz', 'Webkit'])) {
-    return '-' + (0,change_case__WEBPACK_IMPORTED_MODULE_2__.paramCase)(property);
+    return '-' + (0,change_case__WEBPACK_IMPORTED_MODULE_1__.paramCase)(property);
   }
-  return (0,change_case__WEBPACK_IMPORTED_MODULE_2__.paramCase)(property);
+  return (0,change_case__WEBPACK_IMPORTED_MODULE_1__.paramCase)(property);
 }
 
 /**
@@ -2887,7 +4383,7 @@ function renderElement(element, context, legacyContext = {}) {
   }
   switch (typeof element) {
     case 'string':
-      return (0,_wordpress_escape_html__WEBPACK_IMPORTED_MODULE_3__.escapeHTML)(element);
+      return (0,_wordpress_escape_html__WEBPACK_IMPORTED_MODULE_2__.escapeHTML)(element);
     case 'number':
       return element.toString();
   }
@@ -2897,8 +4393,8 @@ function renderElement(element, context, legacyContext = {}) {
   } = /** @type {{type?: any, props?: any}} */
   element;
   switch (type) {
-    case _react__WEBPACK_IMPORTED_MODULE_1__.StrictMode:
-    case _react__WEBPACK_IMPORTED_MODULE_1__.Fragment:
+    case _react__WEBPACK_IMPORTED_MODULE_3__.StrictMode:
+    case _react__WEBPACK_IMPORTED_MODULE_3__.Fragment:
       return renderChildren(props.children, context, legacyContext);
     case _raw_html__WEBPACK_IMPORTED_MODULE_4__["default"]:
       const {
@@ -3027,7 +4523,7 @@ function renderAttributes(props) {
   let result = '';
   for (const key in props) {
     const attribute = getNormalAttributeName(key);
-    if (!(0,_wordpress_escape_html__WEBPACK_IMPORTED_MODULE_3__.isValidAttributeName)(attribute)) {
+    if (!(0,_wordpress_escape_html__WEBPACK_IMPORTED_MODULE_2__.isValidAttributeName)(attribute)) {
       continue;
     }
     let value = getNormalAttributeValue(key, props[key]);
@@ -3061,7 +4557,7 @@ function renderAttributes(props) {
       continue;
     }
     if (typeof value === 'string') {
-      value = (0,_wordpress_escape_html__WEBPACK_IMPORTED_MODULE_3__.escapeAttribute)(value);
+      value = (0,_wordpress_escape_html__WEBPACK_IMPORTED_MODULE_2__.escapeAttribute)(value);
     }
     result += '="' + value + '"';
   }
@@ -3316,13 +4812,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   dotCase: () => (/* binding */ dotCase)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.mjs");
-/* harmony import */ var no_case__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! no-case */ "../node_modules/no-case/dist.es2015/index.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.mjs");
+/* harmony import */ var no_case__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! no-case */ "../node_modules/no-case/dist.es2015/index.js");
 
 
 function dotCase(input, options) {
     if (options === void 0) { options = {}; }
-    return (0,no_case__WEBPACK_IMPORTED_MODULE_0__.noCase)(input, (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({ delimiter: "." }, options));
+    return (0,no_case__WEBPACK_IMPORTED_MODULE_1__.noCase)(input, (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__assign)({ delimiter: "." }, options));
 }
 //# sourceMappingURL=index.js.map
 
@@ -3598,13 +5094,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   paramCase: () => (/* binding */ paramCase)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.mjs");
-/* harmony import */ var dot_case__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dot-case */ "../node_modules/dot-case/dist.es2015/index.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.mjs");
+/* harmony import */ var dot_case__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! dot-case */ "../node_modules/dot-case/dist.es2015/index.js");
 
 
 function paramCase(input, options) {
     if (options === void 0) { options = {}; }
-    return (0,dot_case__WEBPACK_IMPORTED_MODULE_0__.dotCase)(input, (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({ delimiter: "-" }, options));
+    return (0,dot_case__WEBPACK_IMPORTED_MODULE_1__.dotCase)(input, (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__assign)({ delimiter: "-" }, options));
 }
 //# sourceMappingURL=index.js.map
 
@@ -5096,6 +6592,28 @@ function __rewriteRelativeImportExtension(path, preserveJsx) {
 
 /***/ }),
 
+/***/ "@elementor/icons":
+/*!************************************!*\
+  !*** external "elementorV2.icons" ***!
+  \************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = elementorV2.icons;
+
+/***/ }),
+
+/***/ "@elementor/ui":
+/*!*********************************!*\
+  !*** external "elementorV2.ui" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = elementorV2.ui;
+
+/***/ }),
+
 /***/ "@wordpress/components":
 /*!********************************!*\
   !*** external "wp.components" ***!
@@ -5232,11 +6750,20 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/inte
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _element = __webpack_require__(/*! @wordpress/element */ "../node_modules/@wordpress/element/build-module/index.js");
 var _domReady = _interopRequireDefault(__webpack_require__(/*! @wordpress/dom-ready */ "@wordpress/dom-ready"));
+var _appEditorOne = __webpack_require__(/*! ./app-editor-one */ "../modules/element-manager/assets/js/app-editor-one/index.js");
 var _app = __webpack_require__(/*! ./app */ "../modules/element-manager/assets/js/app.js");
 (0, _domReady.default)(function () {
+  var _elementorCommon$conf;
   var htmlOutput = document.getElementById('elementor-element-manager-wrap');
-  if (htmlOutput) {
-    (0, _element.render)(/*#__PURE__*/_react.default.createElement(_app.App, null), htmlOutput);
+  if (!htmlOutput) {
+    return;
+  }
+  var isEditorOneEnabled = typeof elementorCommon !== 'undefined' && true === ((_elementorCommon$conf = elementorCommon.config) === null || _elementorCommon$conf === void 0 || (_elementorCommon$conf = _elementorCommon$conf.experimentalFeatures) === null || _elementorCommon$conf === void 0 ? void 0 : _elementorCommon$conf.e_editor_one);
+  var root = (0, _element.createRoot)(htmlOutput);
+  if (isEditorOneEnabled) {
+    root.render(/*#__PURE__*/_react.default.createElement(_appEditorOne.AppModern, null));
+  } else {
+    root.render(/*#__PURE__*/_react.default.createElement(_app.AppLegacy, null));
   }
 });
 })();
